@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.27)  8 JAN 2019 15:22
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.27)  8 JAN 2019 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -255,6 +255,36 @@ l.2 \section{モデルによる違い}
                               
 ? 
 
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 
+    
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \subsection
+               {MelodyRNN}
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \subsection{MelodyRNN}
+                          
+? 
+
 ! Package inputenc Error: Unicode character ^^H (U+8)
 (inputenc)                not set up for use with LaTeX.
 
@@ -262,8 +292,26 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 ...は楽曲のメロディを制作するモデルである．^^H
+l.6 ...は楽曲のメロディを制作するモデルである．^^H
+                                                  ^^HMelodyRNNである３つのモ...
+
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
                                                   
+l.6 ...曲のメロディを制作するモデルである．^^H^^H
+                                                 MelodyRNNである３つのモデルを
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.7 (1)^^Ibasic_
+                rnn\\
 ? 
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -272,8 +320,26 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 \section
-            {学習回数による違い}
+l.13 \subsection
+                {PolyphonyRNN}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.13 \subsection
+                {PolyphonyRNN}
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.13 \subsection
+                {PolyphonyRNN}
+? 
+! Extra }, or forgotten \endgroup.
+\par ...par@deathcycles >\@m \@noitemerr {\@@par }
+                                                  \fi \else {\@@par }\fi 
+l.13 \subsection
+                {PolyphonyRNN}
 ? 
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -282,8 +348,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 \section{学習回数による違い}
-                                
+l.13 \subsection{PolyphonyRNN}
+                              
 ? 
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -292,8 +358,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6 \section
-            {ノード数による違い}
+l.15 
+     
 ? 
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -302,8 +368,38 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6 \section{ノード数による違い}
-                                
+l.16 \section
+             {学習回数による違い}
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \section{学習回数による違い}
+                                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \section
+             {ノード数による違い}
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \section{ノード数による違い}
+                                 
 ? 
 ) (./chapter/chapter4.tex
 
@@ -658,4 +754,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  25i,7n,21p,378b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index.dvi (12 pages, 13084 bytes).
+Output written on index.dvi (12 pages, 14456 bytes).
