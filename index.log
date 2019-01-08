@@ -1,20 +1,15 @@
-<<<<<<< HEAD
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  8 JAN 2019 13:35
-=======
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.27)  8 JAN 2019 13:57
->>>>>>> master
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  8 JAN 2019 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **index.tex
 (./index.tex
-pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+pLaTeX2e <2018-12-01> (based on LaTeX2e <2018-12-01>)
 (/usr/local/texlive/2018/texmf-dist/tex/platex/base/jreport.cls
-Document Class: jreport 2018/02/04 v1.7h Standard pLaTeX class
+Document Class: jreport 2018/10/25 v1.8a Standard pLaTeX class
 \c@@paper=\count83
 (/usr/local/texlive/2018/texmf-dist/tex/platex/base/jsize12.clo
-File: jsize12.clo 2018/02/04 v1.7h Standard pLaTeX file (size option)
+File: jsize12.clo 2018/10/25 v1.8a Standard pLaTeX file (size option)
 )
 \c@part=\count84
 \c@chapter=\count85
@@ -66,19 +61,19 @@ Package: ascmac 2018/03/09 v2.0h ascmac wrapper (community edition)
 Package: tascmac 2018/03/09 v2.0h ascmac package (community edition) 
 \@savetbaselineshift=\dimen123
 \@saveybaselineshift=\dimen124
-\scb@x=\box42
-\scscb@x=\box43
+\scb@x=\box43
+\scscb@x=\box44
 \@bw=\dimen125
-\@nbox=\box44
-\@nbody=\box45
+\@nbox=\box45
+\@nbody=\box46
 \@scw=\dimen126
-\ascmac@hoboxa=\box46
-\ascmac@hoboxb=\box47
+\ascmac@hoboxa=\box47
+\ascmac@hoboxb=\box48
 \@itemh=\dimen127
 \@iboxpos=\toks16
-\@iboxstr=\box48
-\@bwsp=\box49
-\@@bwsp=\box50
+\@iboxstr=\box49
+\@bwsp=\box50
+\@@bwsp=\box51
 \@bcal=\count94
 \shaderule=\dimen128
 ))
@@ -103,24 +98,24 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \listing@line=\count97
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
 \multirow@colwidth=\skip43
 \multirow@cntb=\count98
 \multirow@dima=\skip44
 \bigstrutjot=\dimen129
 )
 (./style/eclbkbox.sty
-\bk@bxb=\box51
-\bk@bxa=\box52
+\bk@bxb=\box52
+\bk@bxa=\box53
 \bk@lcnt=\count99
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
-\@fancybox=\box53
+\@fancybox=\box54
 \shadowsize=\dimen130
-\@Sbox=\box54
+\@Sbox=\box55
 \do@VerbBox=\toks19
 \the@fancyput=\toks20
 \this@fancyput=\toks21
@@ -130,31 +125,6 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks23
-<<<<<<< HEAD
-) (./macro.tex) (./index.aux)
-\openout1 = `index.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 31.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 31.
-=======
 )
 (./macro.tex) (./index.aux)
 \openout1 = `index.aux'.
@@ -179,30 +149,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 26.
->>>>>>> master
  [1
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-<<<<<<< HEAD
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 32.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 32.
-=======
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 27.
->>>>>>> master
- (./index.toc
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
-)
+ (./index.toc)
 \tf@toc=\write4
 \openout4 = `index.toc'.
 
@@ -214,12 +168,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2
 
-<<<<<<< HEAD
-] (./index.lot)
-=======
 ]
 (./index.lot)
->>>>>>> master
 \tf@lot=\write6
 \openout6 = `index.lot'.
 
@@ -228,15 +178,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ] (./chapter/chapter1.tex
 第 1 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-<<<<<<< HEAD
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 3.
-=======
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 2.
->>>>>>> master
 ) (./chapter/chapter2.tex [1
 
 
@@ -246,42 +190,15 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 3.
-<<<<<<< HEAD
-) (./chapter/chapter3.tex [2
-
-]
-第 3 章
-) (./chapter/chapter4.tex [3
-
-]
-第 4 章
-) (./chapter/chapter5.tex [4
-
-]
-第 5 章
-[5
-
-]) [6] [7
-
-] [8
-
-] (./index.aux) ) 
-Here is how much of TeX's memory you used:
- 1249 strings out of 493226
- 15816 string characters out of 6144094
- 85902 words of memory out of 5000000
- 5227 multiletter control sequences out of 15000+600000
- 17170 words of font info for 67 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 25i,7n,21p,459b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on index.dvi (12 pages, 12560 bytes).
-=======
 [2
 
 ]
 File: ./img/MIDI_make.png Graphic file (type bmp)
 <./img/MIDI_make.png>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 17.
 ) (./chapter/chapter3.tex
 ! Improper \prevdepth.
 \newpage ...everypar {}\fi \par \ifdim \prevdepth 
@@ -332,24 +249,13 @@ l.2 \section{モデルによる違い}
                               
 ? 
 
-! Package inputenc Error: Unicode character ^^H (U+8)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 ...は楽曲のメロディを制作するモデルである．^^H
-                                                  これは３種
-? 
-
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 \section
+l.3 \section
             {学習回数による違い}
 ? 
 
@@ -359,7 +265,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 \section{学習回数による違い}
+l.3 \section{学習回数による違い}
                                 
 ? 
 
@@ -369,7 +275,27 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6 \section
+l.4 \section
+            {学習回数による違い}
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \section{学習回数による違い}
+                                
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \section
             {ノード数による違い}
 ? 
 
@@ -379,7 +305,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6 \section{ノード数による違い}
+l.5 \section{ノード数による違い}
                                 
 ? 
 ) (./chapter/chapter4.tex
@@ -415,7 +341,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.2 \section
-            {MelodyRNN}
+            {NoteSequenceの作成}
 ? 
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -424,101 +350,41 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2 \section{MelodyRNN}
+l.2 \section{NoteSequenceの作成}
+                                
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7     \begin{center}
+                      
+? 
+File: ./img/Notesequence_make.png Graphic file (type bmp)
+<./img/Notesequence_make.png>
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \begin{center}
                        
 ? 
+File: ./img/Notesequence_split.png Graphic file (type bmp)
+<./img/Notesequence_split.png>
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Overfull \hbox (0.98883pt too wide) in paragraph at lines 15--26
+[]\OT1/cmr/m/n/12 --inputdir \JY1/mc/m/n/12 で学習させる \OT1/cmr/m/n/12 MIDI \
+JY1/mc/m/n/12 デ ータの 絶対パスを指定し\OT1/cmr/m/n/12 ,--outputfile \JY1/mc/m
+/n/12 で \OT1/cmr/m/n/12 Note-
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \subsection
-               {BasicRNN}
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \subsection{BasicRNN}
-                         
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \subsection
-               {LookbackRNN}
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \subsection{LookbackRNN}
-                            
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 \subsection
-               {AttisionRNN}
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 \subsection{AttisionRNN}
-                            
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 \section
-            {PolyfonyRNN}
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 \section{PolyfonyRNN}
-                         
-? 
-) (./chapter/chapter5.tex
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \chapter
-            {結論}
-? 
-[5
+) (./chapter/chapter5.tex [5
 
 ]
 第 5 章
@@ -539,7 +405,30 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2 \section
+l.2 \newpage
+            
+? 
+[6
+
+]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 
+    
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \section
             {今後の課題}
 ? 
 
@@ -549,7 +438,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2 \section{今後の課題}
+l.4 \section{今後の課題}
                         
 ? 
 )
@@ -573,9 +462,7 @@ Type  H <return>  for immediate help.
 l.46 \newpage
              
 ? 
-[6
-
-]
+[7]
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -676,7 +563,7 @@ Type  H <return>  for immediate help.
 l.57 \begin{thebibliography}{99}
                                 \addcontentsline{toc}{chapter}{参考文献}%参...
 ? 
-[7
+[8
 
 ]
 
@@ -700,34 +587,35 @@ l.57 \begin{thebibliography}{99}
                                 \addcontentsline{toc}{chapter}{参考文献}%参...
 ? 
 
-! LaTeX Error: \begin{itemize} on input line 19 ended by \end{document}.
+! LaTeX Error: \begin{itemize} on input line 26 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 \end{document}
+l.79 \end{document}
                    
 ? 
-[8
+[9
 
 ] (./index.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
-(\end occurred inside a group at level 1)
+(\end occurred inside a group at level 3)
 
+### semi simple group (level 3) entered at line 26 (\begingroup)
+### semi simple group (level 2) entered at line 14 (\begingroup)
 ### semi simple group (level 1) entered at line 19 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 1256 strings out of 493281
- 15869 string characters out of 6145040
- 84907 words of memory out of 5000000
- 5178 multiletter control sequences out of 15000+600000
- 17170 words of font info for 67 fonts, out of 8000000 for 9000
+ 1261 strings out of 493226
+ 16069 string characters out of 6144094
+ 84902 words of memory out of 5000000
+ 5233 multiletter control sequences out of 15000+600000
+ 16863 words of font info for 66 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 25i,7n,21p,378b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,7n,21p,378b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index.dvi (12 pages, 13116 bytes).
->>>>>>> master
+Output written on index.dvi (13 pages, 9324 bytes).
