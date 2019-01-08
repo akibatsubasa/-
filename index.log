@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.27)  8 JAN 2019 13:57
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.27)  8 JAN 2019 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -263,7 +263,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.4 ...は楽曲のメロディを制作するモデルである．^^H
-                                                  これは３種
+                                                  
 ? 
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -596,7 +596,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \begin{thebibliography}{99}
+l.58 
+     
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \begin{thebibliography}{99}
                                 \addcontentsline{toc}{chapter}{参考文献}%参...
 ? 
 [7
@@ -609,7 +619,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \begin{thebibliography}{99}
+l.59 \begin{thebibliography}{99}
                                 \addcontentsline{toc}{chapter}{参考文献}%参...
 ? 
 
@@ -619,7 +629,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \begin{thebibliography}{99}
+l.59 \begin{thebibliography}{99}
                                 \addcontentsline{toc}{chapter}{参考文献}%参...
 ? 
 
@@ -629,27 +639,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 \end{document}
+l.82 \end{document}
                    
 ? 
 [8
 
-] (./index.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
+] (./index.aux) )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 19 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
  1256 strings out of 493281
- 15869 string characters out of 6145040
+ 15871 string characters out of 6145040
  84907 words of memory out of 5000000
  5178 multiletter control sequences out of 15000+600000
  17170 words of font info for 67 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  25i,7n,21p,378b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index.dvi (12 pages, 13116 bytes).
+Output written on index.dvi (12 pages, 13084 bytes).
