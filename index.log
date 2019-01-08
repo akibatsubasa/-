@@ -1,15 +1,16 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  7 JAN 2019 15:26
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.27)  8 JAN 2019 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/matsumoto/Documents/soturon/-/index
-(/Users/matsumoto/Documents/soturon/-/index.tex
-pLaTeX2e <2018-12-01> (based on LaTeX2e <2018-12-01>)
+**index.tex
+(./index.tex
+pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/platex/base/jreport.cls
-Document Class: jreport 2018/10/25 v1.8a Standard pLaTeX class
+Document Class: jreport 2018/02/04 v1.7h Standard pLaTeX class
 \c@@paper=\count83
 (/usr/local/texlive/2018/texmf-dist/tex/platex/base/jsize12.clo
-File: jsize12.clo 2018/10/25 v1.8a Standard pLaTeX file (size option)
+File: jsize12.clo 2018/02/04 v1.7h Standard pLaTeX file (size option)
 )
 \c@part=\count84
 \c@chapter=\count85
@@ -29,49 +30,59 @@ LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 \@lnumwidth=\dimen119
 \bibindent=\dimen120
 \heisei=\count93
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 99.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 ))
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/ascmac/ascmac.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ascmac/ascmac.sty
 Package: ascmac 2018/03/09 v2.0h ascmac wrapper (community edition) 
- (/usr/local/texlive/2018/texmf-dist/tex/latex/ascmac/tascmac.sty
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ascmac/tascmac.sty
 Package: tascmac 2018/03/09 v2.0h ascmac package (community edition) 
 \@savetbaselineshift=\dimen123
 \@saveybaselineshift=\dimen124
-\scb@x=\box43
-\scscb@x=\box44
+\scb@x=\box42
+\scscb@x=\box43
 \@bw=\dimen125
-\@nbox=\box45
-\@nbody=\box46
+\@nbox=\box44
+\@nbody=\box45
 \@scw=\dimen126
-\ascmac@hoboxa=\box47
-\ascmac@hoboxb=\box48
+\ascmac@hoboxa=\box46
+\ascmac@hoboxb=\box47
 \@itemh=\dimen127
 \@iboxpos=\toks16
-\@iboxstr=\box49
-\@bwsp=\box50
-\@@bwsp=\box51
+\@iboxstr=\box48
+\@bwsp=\box49
+\@@bwsp=\box50
 \@bcal=\count94
 \shaderule=\dimen128
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (./style/moreverb.sty
+)
+(./style/moreverb.sty
 
 LaTeX Warning: You have requested package `style/moreverb',
                but the package provides `moreverb'.
@@ -86,23 +97,26 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \tab@position=\count95
 \tab@size=\count96
 \listing@line=\count97
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip43
 \multirow@cntb=\count98
 \multirow@dima=\skip44
 \bigstrutjot=\dimen129
-) (./style/eclbkbox.sty
-\bk@bxb=\box52
-\bk@bxa=\box53
+)
+(./style/eclbkbox.sty
+\bk@bxb=\box51
+\bk@bxa=\box52
 \bk@lcnt=\count99
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/fancybox/fancybox.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
-\@fancybox=\box54
+\@fancybox=\box53
 \shadowsize=\dimen130
-\@Sbox=\box55
+\@Sbox=\box54
 \do@VerbBox=\toks19
 \the@fancyput=\toks20
 \this@fancyput=\toks21
@@ -112,4 +126,101 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks23
-) (./macro.tex
+)
+(./macro.tex) (./index.aux)
+\openout1 = `index.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 31.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 31.
+ [1
+
+]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 32.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 32.
+ (./index.toc)
+\tf@toc=\write4
+\openout4 = `index.toc'.
+
+ [1
+
+] (./index.lof)
+\tf@lof=\write5
+\openout5 = `index.lof'.
+
+ [2
+
+]
+(./index.lot)
+\tf@lot=\write6
+\openout6 = `index.lot'.
+
+ [3
+
+] (./chapter/chapter1.tex
+第 1 章
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 3.
+) (./chapter/chapter2.tex [1
+
+
+]
+第 2 章
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 3.
+) (./chapter/chapter3.tex [2
+
+]
+第 3 章
+) (./chapter/chapter4.tex [3
+
+]
+第 4 章
+) (./chapter/chapter5.tex [4
+
+]
+第 5 章
+[5
+
+]) [6] [7
+
+] [8
+
+] (./index.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1227 strings out of 493281
+ 15494 string characters out of 6145040
+ 82907 words of memory out of 5000000
+ 5162 multiletter control sequences out of 15000+600000
+ 14492 words of font info for 58 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 25i,7n,21p,426b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on index.dvi (12 pages, 8624 bytes).
