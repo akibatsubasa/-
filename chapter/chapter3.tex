@@ -3,19 +3,18 @@
 　本研究ではMagentaで用意されている２つの学習モデルを用いた。以下に示すモデルを用いて楽曲制作をそれぞれ行い，比較，検証する．\\
 
 \subsection{MelodyRNN}
-　MelodeRNNは楽曲のメロディを制作するモデルである．MelodyRNNである３つのモデルを以下に示す．\\
+　MelodeRNNは楽曲のメロディを制作するモデルである.MelodyRNNである３つのモデルを以下に示す．\\
 (1)	basic_rnn\\
 　前の状態を保持し，これを記憶または忘却する．時系列を学習することにより，次の音の予測を可能にしている．Lookback_rnnとAttention_rnnはこれを基に機能を追加したものである．\\
-begin{figure}[!ht]
+\begin{figure}[!ht]
     \begin{screen}
     \begin{center}
-        \includegraphics[scale=1.5, clip]{./img/basic1.png}
+        \includegraphics[width=\hsize]{./img/basic1.pdf}
         \caption{magentaによるMIDI音楽データ生成までのプロセ}
         \label{fig:magentaによるMIDI音楽データ生成までのプロセス}
     \end{center}
     \end{screen}
-    \end{figure}
-\begin{itemize}
+\end{figure}
 (2)	lookback_rnn\\
 　Basic_rnnを基に，１小節前と２小節前の音，拍数，前の小節の繰り返しかどうかの情報を与え，音楽の流れを掴もうとするもの．\\
 (3)	attention_rnn\\
