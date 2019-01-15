@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  13 JAN 2019 22:02
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  15 JAN 2019 17:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -71,13 +71,9 @@ Package: tascmac 2018/03/09 v2.0h ascmac package (community edition)
 )) (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (./style/moreverb.sty
-
-LaTeX Warning: You have requested package `style/moreverb',
-               but the package provides `moreverb'.
-
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/moreverb/moreverb.sty
 Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/verbatim.sty
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks17
 \verbatim@line=\toks18
@@ -112,4 +108,5 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks23
-) (./macro.te
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxbase.sty
+Package: bxbas
