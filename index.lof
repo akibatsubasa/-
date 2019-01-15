@@ -1,6 +1,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces magentaによるMIDI音楽データ生成までのプロセス}}{3}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces magentaによるMIDI音楽データ生成までのプロセス}}{3}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces NoteSequenceの作成}}{5}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces NoteSequenceを学習用と評価表に分割}}{5}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces BasicRNNを使用した学習の開始}}{6}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 学習モデルを使用し,10\GenericError {(inputenc) }{Package inputenc Error: Unicode character ^^H (U+0008)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{You may provide a definition with\MessageBreak \GenericError { }{LaTeX Error: Can be used only in preamble}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}曲を作成}}{6}% 
 \addvspace {10\p@ }
