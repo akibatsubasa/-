@@ -3,9 +3,9 @@
 \contentsline {section}{\numberline {1.2}本論文の構成}{1}% 
 \contentsline {chapter}{\numberline {第2章}理論}{2}% 
 \contentsline {section}{\numberline {2.1}AIを用いた楽曲作成}{2}% 
-\contentsline {subsection}{\numberline {2.1.1}MIDI}{2}% 
-\contentsline {subsection}{\numberline {2.1.2}Magenta}{2}% 
-\contentsline {section}{\numberline {2.2}開発環境の構築}{2}% 
+\contentsline {subsection}{\numberline {2.1.1}Magenta}{2}% 
+\contentsline {subsection}{\numberline {2.1.2}MIDI}{3}% 
+\contentsline {section}{\numberline {2.2}開発環境の構築}{3}% 
 \contentsline {chapter}{\numberline {第3章}楽曲制作}{4}% 
 \contentsline {section}{\numberline {3.1}NoteSequenceについて}{4}% 
 \contentsline {section}{\numberline {3.2}NoteSequenceの作成}{4}% 
