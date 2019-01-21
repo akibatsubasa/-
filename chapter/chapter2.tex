@@ -6,7 +6,6 @@ AIによる曲制作では主にMIDIファイルの音楽データを使用す�
 \subsection{Magenta}
 本研究ではMagenta[1]を使用する.これは音楽などをTensorFlowを使って機械学習するライブラリであり，Google BrainがGitHab上に公開している.
 Magentaではまず学習させたい音楽のMIDIデータをファイルに格納しNoteSequence（magentaが扱うファイル形式）に変更する.それを学習用データセットに変換したあと学習を行う.このとき，一度に学習させるデータの数，学習を行う回数，ノード数を設定する.これをパッケージ化し，MIDIファイルとして新たに楽曲を生成するという流れである.これを図2.1に示す.\\
-\newpage
 \begin{figure}[!ht]
     \begin{screen}
     \begin{center}
@@ -15,9 +14,14 @@ Magentaではまず学習させたい音楽のMIDIデータをファイルに格
         \label{fig:magentaによるMIDI音楽データ生成までのプロセス}
     \end{center}
     \end{screen}
-    \end{figure}
-\begin{itemize}
+\end{figure}\\
 \section{開発環境の構築}
-開発環境の構築にはコンテナ型仮想環境を提供するオープンソフトウェアであるDockerを用いた.\\
- Dockerには仮想環境を配布可能な形にする事ができるDockerImageがあり,そのImageを用いる事で同一の実行環境が作成できる.
+本システムの開発環境を表に示す．
+本システムは iMac 2012 を使用しOSは OS X Yosemite を使用した．
+統合開発環境に Xcode6.3.2 を利用し言語は Objective-C を用いて開発を行った．
+使用するライブラリとして，出席データをクラウドサーバー上のデータベースにPOSTする機能に AFNetworking を利用し，映像に埋め込まれた電子透かしを認識する機能に fjewm を利用した．
+テスト端末として千葉工業大学にて全学生に貸与されている iPad mini(第1世代)を使用する．使用する iPad mini の OS は iOS8.3 である．
+
+本研究の実験内容をコンテナ型仮想環境を提供するオープンソフトウェアであるDockerを用いた.\\
+Dockerには仮想環境を配布可能な形にする事ができるDockerImageがあり,そのImageを用いる事で同一の実行環境が作成できる.
 また,クラウド上でDockerImageを配布できるDockerHubというサービスがあり,そのサービス上にすでにMagentaの開発環境を構築済みの仮想環境があるため、その環境を今回は利用した.

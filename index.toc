@@ -5,12 +5,13 @@
 \contentsline {section}{\numberline {2.1}AIを用いた楽曲作成}{2}% 
 \contentsline {subsection}{\numberline {2.1.1}MIDI}{2}% 
 \contentsline {subsection}{\numberline {2.1.2}Magenta}{2}% 
-\contentsline {section}{\numberline {2.2}開発環境の構築}{3}% 
+\contentsline {section}{\numberline {2.2}開発環境の構築}{2}% 
 \contentsline {chapter}{\numberline {第3章}楽曲制作}{4}% 
-\contentsline {section}{\numberline {3.1}NoteSequenceの作成}{4}% 
-\contentsline {subsection}{\numberline {3.1.1}学習の開始}{5}% 
-\contentsline {subsection}{\numberline {3.1.2}\GenericError {(inputenc) }{Package inputenc Error: Unicode character ^^H (U+0008)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{You may provide a definition with\MessageBreak \GenericError { }{LaTeX Error: Can be used only in preamble}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}音楽データの作成}{5}% 
-\contentsline {section}{\numberline {3.2}PolyfonyRNN}{5}% 
+\contentsline {section}{\numberline {3.1}NoteSequenceについて}{4}% 
+\contentsline {section}{\numberline {3.2}NoteSequenceの作成}{4}% 
+\contentsline {subsection}{\numberline {3.2.1}学習の開始}{5}% 
+\contentsline {subsection}{\numberline {3.2.2}音楽データの作成}{5}% 
+\contentsline {section}{\numberline {3.3}PolyfonyRNN}{5}% 
 \contentsline {chapter}{\numberline {第4章}結論}{6}% 
 \contentsline {section}{\numberline {4.1}今後の課題}{7}% 
 \contentsline {chapter}{謝辞}{8}% 
