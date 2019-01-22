@@ -4,7 +4,6 @@ NoteSequenceとはMIDIデータから作成されるプロトコルバッファ�
 プロトコルバッファとはGoogleが2008年にオープンソース化したバイナリベースのデータフォーマットである.
 既存の技術としてはXMLやJSONなどのテキストベースのデータフォーマットがあるが,プロトコルバッファはバイナリフォーマットであるので,アプリケーション間でデータ構造の送受信をする際に少ないデータ量ですむという特徴がある。
 \section{NoteSequenceの作成}
-MagentaはPythonで作成されているので,実行するにはPythonファイルを指定し実行するか,
 NoteSequenceの作成は図のコマンドで作成できる.
 \begin{figure}[!ht]
     \begin{screen}
@@ -16,6 +15,7 @@ NoteSequenceの作成は図のコマンドで作成できる.
     \end{screen}
 \end{figure}\\
 --input\_dirで学習させるMIDIデータの絶対パスを指定し,--output\_fileでNotesequenceの出力先のディレクトリを指定する.\\
+\newpage
 次に作成したNoteSequenceのデータセットを学習用と評価用に分割するために,下記のコマンドを実行する.
 \begin{figure}[!ht]
     \begin{screen}
@@ -27,8 +27,8 @@ NoteSequenceの作成は図のコマンドで作成できる.
     \end{screen}
 \end{figure}\\
 --configで使用するRNNを指定する.--eval\_ratioでNotesequenceの10％が評価のためのデータになり,残りの90％が学習用のデータになる.\\
-\newpage
 \subsection{学習の開始}
+作成したNoteSequenceから学習モデルを作成するために下記のコマンドを実行する.
 \begin{figure}[!ht]
     \begin{screen}
     \begin{center}
@@ -40,8 +40,9 @@ NoteSequenceの作成は図のコマンドで作成できる.
 \end{figure}
 --configで学習に使用する学習モデルを指定,--rundirで,--sequence\_examplefileで学習のために用意したNotesequenceを指定する.
 --hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--num\_trainingstepsで学習回数を設定する.\\
+\newpage
 \subsection{音楽データの作成}
-下図のコマンドで--
+下図のコマンドで学習モデルに入力する音調をMIDIの形式で指定し音楽データを作成する.
 \begin{figure}[!ht]
     \begin{screen}
     \begin{center}
@@ -51,5 +52,3 @@ NoteSequenceの作成は図のコマンドで作成できる.
     \end{center}
     \end{screen}
 \end{figure}
-
-\section{PolyfonyRNN}
