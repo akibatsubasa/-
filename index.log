@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  22 JAN 2019 14:44
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  22 JAN 2019 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -137,6 +137,9 @@ LaTeX Warning: Label `fig:magentaによるMIDI音楽データ生成までのプ�
 
 LaTeX Warning: Label `fig:NoteSequenceの作成' multiply defined.
 
+
+LaTeX Warning: Label `webpage' multiply defined.
+
 )
 \openout1 = `index.aux'.
 
@@ -230,11 +233,11 @@ File: ./img/Notesequence_make.png Graphic file (type bmp)
 第 4 章
 File: ./img/Notesequence_make.png Graphic file (type bmp)
 <./img/Notesequence_make.png>
+File: ./img/Notesequence_split.png Graphic file (type bmp)
+<./img/Notesequence_split.png>
 [7
 
 ]
-File: ./img/Notesequence_split.png Graphic file (type bmp)
-<./img/Notesequence_split.png>
 File: ./img/Rnn_train.png Graphic file (type bmp)
 <./img/Rnn_train.png>
  [8]
@@ -254,12 +257,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2294 strings out of 493226
- 30651 string characters out of 6144096
- 101769 words of memory out of 5000000
- 6231 multiletter control sequences out of 15000+600000
+ 2295 strings out of 493226
+ 30660 string characters out of 6144094
+ 104769 words of memory out of 5000000
+ 6232 multiletter control sequences out of 15000+600000
  17170 words of font info for 67 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  38i,10n,24p,994b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index.dvi (17 pages, 23972 bytes).
+Output written on index.dvi (17 pages, 28536 bytes).
