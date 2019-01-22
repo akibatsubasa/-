@@ -1,9 +1,0 @@
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces magentaによるMIDI音楽データ生成までのプロセス}}{2}% 
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces NoteSequenceの作成}}{4}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces NoteSequenceを学習用と評価表に分割}}{5}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces BasicRNNを使用した学習の開始}}{5}% 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 学習モデルを使用し,10曲を作成}}{5}% 
-\addvspace {10\p@ }
