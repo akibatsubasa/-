@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {3.3}ノード数による違い}{6}% 
 \contentsline {chapter}{\numberline {第4章}楽曲制作}{7}% 
 \contentsline {section}{\numberline {4.1}NoteSequenceについて}{7}% 
-\contentsline {section}{\numberline {4.2}NoteSequenceの作成}{7}% 
+\contentsline {section}{\numberline {4.2}NoteSequenceの作成}{8}% 
 \contentsline {subsection}{\numberline {4.2.1}学習の開始}{8}% 
 \contentsline {subsection}{\numberline {4.2.2}音楽データの作成}{9}% 
 \contentsline {chapter}{\numberline {第5章}結論}{10}% 
