@@ -1,8 +1,10 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces magentaによるMIDI音楽データ生成までのプロセス}}{1}% 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces 第一次AIブームから今までの流れ\newline (引用：https://bit.ly/2Wc9Ykb)}}{2}% 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces 多種多様なスマートスピーカー}}{3}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces magentaによるMIDI音楽データ生成までのプロセス}}{3}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces magentaによるMIDI音楽データ生成までのプロセス}}{5}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Docker用NVIDAコンテナランタイム\newline (引用：https://github.com/NVIDIA/nvidia-docker)}}{6}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces NoteSequenceの作成}}{5}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces NoteSequenceの作成}}{8}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  23 JAN 2019 15:36
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  23 JAN 2019 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -154,9 +154,6 @@ File: listings.cfg 2018/09/02 1.7 listings configuration
 Package: listings 2018/09/02 1.7 (Carsten Heinz)
  (./macro.tex) (./index.aux
 
-LaTeX Warning: Label `fig:magentaによるMIDI音楽データ生成までのプロセス' multiply defined.
-
-
 LaTeX Warning: Label `webpage' multiply defined.
 
 
@@ -223,15 +220,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ] (./chapter/chapter1.tex
 第 1 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 3.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 3.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 2.
+File: ./img/AI_History.png Graphic file (type bmp)
+<./img/AI_History.png>
 File: ./img/smartspeaker_list.jpg Graphic file (type bmp)
 <./img/smartspeaker_list.jpg>
 [1
 
 
-]) (./chapter/chapter2.tex [2]
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]) (./chapter/chapter2.tex [3] [4]
 第 2 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 3.
@@ -239,30 +242,33 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 3.
 File: ./img/magenta_usestep.png Graphic file (type bmp)
 <./img/magenta_usestep.png>
-[3
+[5
 
 ]
-Overfull \hbox (12.45341pt too wide) in paragraph at lines 29--40
+File: ./img/NVIDEA_Docker.png Graphic file (type bmp)
+<./img/NVIDEA_Docker.png>
+
+Overfull \hbox (12.45341pt too wide) in paragraph at lines 39--50
  [][][] 
  []
 
-) (./chapter/chapter3.tex [4]
+) (./chapter/chapter3.tex [6] [7]
 第 3 章
 File: ./img/Notesequence_make.png Graphic file (type bmp)
 <./img/Notesequence_make.png>
-[5
+[8
 
-]) (./chapter/chapter4.tex [6]
+]) (./chapter/chapter4.tex [9]
 第 4 章
-[7
+[10
 
-] [8] [9]) (./chapter/chapter5.tex [10]
+] [11] [12]) (./chapter/chapter5.tex [13]
 第 5 章
-[11
+[14
 
-]) [12] [13
+]) [15] [16
 
-] [14
+] [17
 
 ] (./index.aux)
 
@@ -270,12 +276,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3879 strings out of 493226
- 51282 string characters out of 6144094
- 137535 words of memory out of 5000000
- 7805 multiletter control sequences out of 15000+600000
+ 3888 strings out of 493226
+ 51532 string characters out of 6144094
+ 137565 words of memory out of 5000000
+ 7812 multiletter control sequences out of 15000+600000
  17507 words of font info for 69 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 38i,10n,32p,994b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,32p,1504b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index.dvi (18 pages, 41540 bytes).
+Output written on index.dvi (21 pages, 49784 bytes).
