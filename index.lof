@@ -7,6 +7,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces NoteSequenceの作成}}{8}% 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces NoteSequenceを学習用と評価表に分割}}{8}% 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces BasicRNNを使用した学習の開始}}{8}% 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 学習モデルを使用し,10曲を作成}}{9}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces BasicRNNを使用した学習の開始}}{9}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 学習モデルを使用し10曲を作成}}{9}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 事前学習済モデルの使用}}{10}% 
 \addvspace {10\p@ }

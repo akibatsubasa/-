@@ -14,10 +14,13 @@
 \contentsline {section}{\numberline {3.3}ノード数による違い}{6}% 
 \contentsline {chapter}{\numberline {第4章}楽曲制作}{7}% 
 \contentsline {section}{\numberline {4.1}NoteSequenceについて}{7}% 
-\contentsline {section}{\numberline {4.2}NoteSequenceの作成}{8}% 
-\contentsline {subsection}{\numberline {4.2.1}学習の開始}{8}% 
-\contentsline {subsection}{\numberline {4.2.2}音楽データの作成}{9}% 
-\contentsline {chapter}{\numberline {第5章}結論}{10}% 
-\contentsline {section}{\numberline {5.1}今後の課題}{11}% 
-\contentsline {chapter}{謝辞}{12}% 
-\contentsline {chapter}{参考文献}{13}% 
+\contentsline {section}{\numberline {4.2}Melody\_rnnを使用して学習モデルを使用}{8}% 
+\contentsline {subsection}{\numberline {4.2.1}NoteSequenceの作成}{8}% 
+\contentsline {subsection}{\numberline {4.2.2}学習の開始}{8}% 
+\contentsline {subsection}{\numberline {4.2.3}音楽データの作成}{9}% 
+\contentsline {subsection}{\numberline {4.2.4}事前に学習済のモデルを使用}{10}% 
+\contentsline {section}{\numberline {4.3}Polyphony\_rnnを使用して学習モデルを使用}{10}% 
+\contentsline {chapter}{\numberline {第5章}結論}{11}% 
+\contentsline {section}{\numberline {5.1}今後の課題}{12}% 
+\contentsline {chapter}{謝辞}{13}% 
+\contentsline {chapter}{参考文献}{14}% 
