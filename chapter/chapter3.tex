@@ -9,7 +9,26 @@
 \begin{figure}[!ht]
     \begin{screen}
     \begin{center}
-        \includegraphics[scale=0.7, clip]{./img/Notesequence_make.png}
+        \includegraphics[scale=0.8, clip]{./img/basic1.png}
+        \caption{NoteSequenceの作成}
+        \label{fig:NoteSequenceの作成}
+    \end{center}
+    \end{screen}
+\end{figure} \\
+
+\begin{figure}[!ht]
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=1, clip]{./img/basic3.png}
+        \caption{NoteSequenceの作成}
+        \label{fig:NoteSequenceの作成}
+    \end{center}
+    \end{screen}
+\end{figure} \\
+\begin{figure}[!ht]
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=0.8, clip]{./img/basic4.png}
         \caption{NoteSequenceの作成}
         \label{fig:NoteSequenceの作成}
     \end{center}
@@ -17,9 +36,27 @@
 \end{figure} \\
 (2) lookback\_rnn\\
 　Basic\_rnnを基に，１小節前と２小節前の音，拍数，前の小節の繰り返しかどうかの情報を与え，音楽の流れを掴もうとするもの．\\
+\newpage
+\begin{figure}[!ht]
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=0.8, clip]{./img/lookback1.png}
+        \caption{NoteSequenceの作成}
+        \label{fig:NoteSequenceの作成}
+    \end{center}
+    \end{screen}
+\end{figure} \\
 (3) attention\_rnn\\
 　basic\_rnnを基に，過去の情報を予測結果に加えてこれによる繰り返しを捉えるもの．\\
-
+\begin{figure}[!ht]
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=0.8, clip]{./img/attention1.png}
+        \caption{NoteSequenceの作成}
+        \label{fig:NoteSequenceの作成}
+    \end{center}
+    \end{screen}
+\end{figure} \\
 \subsection{PolyphonyRNN}
 　複数の同時音のモデリングが可能になっており，複数音の響きを1つのかたまりとして捉えて学習しているモデルである.このモデルを使用することで，伴奏も含めた楽曲の生成が可能である。\\
 \\
