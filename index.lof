@@ -2,16 +2,13 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces 第一次AIブームから今までの流れ\newline (引用：https://bit.ly/2Wc9Ykb)}}{2}% 
 \contentsline {figure}{\numberline {1.2}{\ignorespaces 多種多様なスマートスピーカー}}{3}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces magentaによるMIDI音楽データ生成までのプロセス}}{5}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Docker用NVIDAコンテナランタイム\newline (引用：https://github.com/NVIDIA/nvidia-docker)}}{7}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces magentaによるMIDI音楽データ生成までのプロセス}}{6}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Docker用NVIDAコンテナランタイム\newline (引用：https://github.com/NVIDIA/nvidia-docker)}}{8}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces NoteSequenceの作成}}{9}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces NoteSequenceの作成}}{10}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces NoteSequenceの作成}}{10}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces NoteSequenceの作成}}{11}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces NoteSequenceの作成}}{11}% 
 \addvspace {10\p@ }
-<<<<<<< HEAD
-\contentsline {figure}{\numberline {4.1}{\ignorespaces NoteSequenceの作成}}{6}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces NoteSequenceを学習用と評価表に分割}}{6}% 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces BasicRNNを使用した学習の開始}}{7}% 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 学習モデルを使用し,10\GenericError {(inputenc) }{Package inputenc Error: Unicode character ^^H (U+0008)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{You may provide a definition with\MessageBreak \GenericError { }{LaTeX Error: Can be used only in preamble}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}曲を作成}}{7}% 
-=======
->>>>>>> 6147963ff49a9f2b513983a9bdecfb93e533c995
 \addvspace {10\p@ }
