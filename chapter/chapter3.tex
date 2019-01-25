@@ -3,41 +3,28 @@
 　本研究ではMagentaで用意されている２つの学習モデルを用いた。以下に示すモデルを用いて楽曲制作をそれぞれ行い，比較，検証する．\\
 \subsection{MelodyRNN}
 　MelodeRNNは楽曲のメロディを制作するモデルである.MelodyRNNである３つのモデルを以下に示す．\\
-<<<<<<< HEAD
-(1) basic\_rnn\\
-　前の状態を保持し，これを記憶または忘却する．時系列を学習することにより，次の音の予測を可能にしている．このモデルを図3.1と3.2に示す．\\
-=======
 (1) basic\_rnn
 　前の状態を保持し，これを記憶または忘却する．時系列を学習することにより，次の音の予測を可能にしている．Lookback\_rnnとAttention\_rnnはこれを基に機能を追加したものである．\\
->>>>>>> 73661feb94347eb89ba18f35b87727a5d1a7b9ee
 \begin{figure}[!ht]
     \begin{screen}
     \begin{center}
         \includegraphics[scale=1, clip]{./img/basic3.png}
-        \caption{basic\_rnnのモデル(1)}
-        \label{fig:basic\_rnnのモデル(1)}
+        \caption{basicrnnのモデル1}
+        \label{fig:basicrnnのモデル1}
     \end{center}
     \end{screen}
-<<<<<<< HEAD
-\end{figure} \\
-\newpage
-=======
 \end{figure}\\
->>>>>>> 73661feb94347eb89ba18f35b87727a5d1a7b9ee
 \begin{figure}[!ht]
     \begin{screen}
     \begin{center}
         \includegraphics[scale=0.8, clip]{./img/basic4.png}
-        \caption{basic\_rnnのモデル(２)}
-        \label{fig:basic\_rnnのモデル(２)}
+        \caption{basicrnnのモデル２}
+        \label{fig:basicrnnのモデル２}
     \end{center}
     \end{screen}
-<<<<<<< HEAD
-\end{figure} \\
-　Lookback\_rnnとAttention\_rnnはこれを基に機能を追加したものである．\\
-=======
 \end{figure}\\
->>>>>>> 73661feb94347eb89ba18f35b87727a5d1a7b9ee
+　Lookback\_rnnとAttention\_rnnはこれを基に機能を追加したものである．\\
+\end{figure}\\
 \begin{figure}[!ht]
     \begin{screen}
     \begin{center}
@@ -46,7 +33,7 @@
         \label{fig:MelodyRNNについて}
     \end{center}
     \end{screen}
-\end{figure} \\
+\end{figure}\\
 \newpage
 (2) lookback\_rnn\\
 　Basic\_rnnを基に，１小節前と２小節前の音，拍数，前の小節の繰り返しかどうかの情報を与え，音楽の流れを掴もうとするもの．\\
@@ -54,11 +41,11 @@
     \begin{screen}
     \begin{center}
         \includegraphics[scale=0.8, clip]{./img/lookback1.png}
-        \caption{lookback\_rnnのモデル}
-        \label{fig:lookback\_rnnのモデル}
+        \caption{lookbackrnnのモデル}
+        \label{fig:lookbackrnnのモデル}
     \end{center}
     \end{screen}
-\end{figure} \\
+\end{figure}\\
 \newpage
 (3) attention\_rnn\\
 　basic\_rnnを基に，過去の情報を予測結果に加えてこれによる繰り返しを捉えるもの．\\
@@ -66,8 +53,8 @@
     \begin{screen}
     \begin{center}
         \includegraphics[scale=0.8, clip]{./img/attention1.png}
-        \caption{attention\_rnnのモデル}
-        \label{fig:attention\_rnnのモデル}
+        \caption{attentionrnnのモデル}
+        \label{fig:attentionrnnのモデル}
     \end{center}
     \end{screen}
 \end{figure}\\
