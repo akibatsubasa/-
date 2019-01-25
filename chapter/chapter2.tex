@@ -12,13 +12,13 @@ Magentaではまず学習させたい音楽のMIDIデータをNoteSequence（mag
 このとき，一度に学習させるデータの数，学習を行う回数，ノード数を設定する.これをパッケージ化し，MIDIファイルとして新たに楽曲を生成するという流れである.これを図2.1に示す.
 \newpage
 \begin{figure}[h]
-\begin{screen}
-\begin{center}
-\includegraphics[scale=1.7, clip]{./img/magenta_usestep.png}
-\caption{magentaによるMIDI音楽データ生成までのプロセス}
-\label{fig:magentaによるMIDI音楽データ生成までのプロセス}
-\end{center}
-\end{screen}
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=1.7, clip]{./img/magenta_usestep.png}
+        \caption{magentaによるMIDI音楽データ生成までのプロセス}
+        \label{fig:magentaによるMIDI音楽データ生成までのプロセス}
+    \end{center}
+    \end{screen}
 \end{figure}
 \subsection{MIDI}
 %MIDIとオーディオデータの形式について述べる
@@ -33,23 +33,23 @@ CUDAのプログラムを実行するにあたって、GPUはグループ化さ�
 \subsection{開発環境}
 前提としてディープラーニング（深層学習）などの用途でNVIDIA社製GPUボードを利用する場合、 ディープラーニング用フレームワーク等のソフトウェアを導入する前に 下記のNVIDIA社製ソフトウェアを導入する必要があります.
 \begin{enumerate}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\item CUDA Toolkit
-\item PUボード用ドライバーソフトウェア
-\item 追加のライブラリ(cuDNNなど
+    \renewcommand{\labelenumi}{(\arabic{enumi})}
+    \item CUDA Toolkit
+    \item PUボード用ドライバーソフトウェア
+    \item 追加のライブラリ(cuDNNなど
 \end{enumerate}
 Magendaプロジェクトが推奨している開発環境の構築には二つ方法があり,一つはDockerというコンテナ型の仮想化環境を構築できるオープンソースソフトウェアを用いる方法と,ローカル環境にPythonのパッケージ管理システムであるpipを用いて構築する方法の2つがある.\\
 Dockerを用いることで仮想化環境をクラウド上で共有できるサービスをであるDockerHubを使用できるため,パッケージのインストールをおこなわずにコマンド一つで環境を構築できる.
 しかし,コンテナにGPUを割り当てることは現状ではNVIDIAが公開しているOSSのnbidia-dockerという
 \begin{figure}[h]
-\begin{screen}
-\begin{center}
-    \includegraphics[scale=0.55, clip]{./img/NVIDEA_Docker.png}
-\caption{Docker用NVIDAコンテナランタイム\newline(引用：https://github.com/NVIDIA/nvidia-docker)}
-\label{img:Docker用NVIDAコンテナランタイム}
-\end{center}
-\end{screen}
-\end{figure}
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=0.55, clip]{./img/NVIDEA_Docker.png}
+        \caption{Docker用NVIDAコンテナランタイム\newline(引用：https://github.com/NVIDIA/nvidia-docker)}
+        \label{img:Docker用NVIDAコンテナランタイム}
+    \end{center}
+    \end{screen}
+\end{figure}\\
 \newpage
 本システムの開発環境を表\ref{tab:開発環境}に示す.\\
     \begin{table}[h]
