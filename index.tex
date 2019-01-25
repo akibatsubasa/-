@@ -1,7 +1,7 @@
 \documentclass[12pt]{jreport}
 \renewcommand{\bibname}{参考文献} 
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{ascmac, url, style/moreverb,multirow,style/eclbkbox,fancybox,enumerate}
+\usepackage{ascmac,url,moreverb,multirow,style/eclbkbox,fancybox,enumerate,bxbase,inputenc,listings}
 \setlength{\textheight}{25cm}		%1ページ当りの行数を指定する
 \setlength{\textwidth}{38zw}		%1行あたりの文字数の設定
 \setlength{\evensidemargin}{10mm}   %偶数ページの余白
@@ -20,7 +20,6 @@
 \date{平成31年度}                   %日付設定（デフォルトは現在の年月日）
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 \pagenumbering{roman}
 \maketitle                        	%タイトルをドキュメントへ貼り付け
@@ -65,13 +64,20 @@
 %\bibitem{webpage}
 %（webページの場合）著者（発行年）表題．\\
 %（改行して）http://・・・
-
-
+\bibitem{webpage}
+Google Brainチーム,"Magenda"
+https://github.com/tensorflow/magenta
+\bibitem{webpage}
+財経新聞,"人工知能を使って執筆した小説が星新一賞一次選考を通過"\\
+https://www.zaikei.co.jp/article/20160323/299468.html
+\bibitem{webpage}
+YAHOOニュース,"AI絵画、大手オークションで初の落札 予想額の40倍超"
+https://headlines.yahoo.co.jp/hl?a=20181026-00010002-afpbbnewsv-int
+\bibitem{webpage}
+マイナビニュース,"XMLはもう不要!? Google製シリアライズツール「Protocol Buffer」"
+https://news.mynavi.jp/article/20080718-protocolbuffer/
 %\bibitem{VM}
 %大久保 健一，大塚 弘毅，染谷 文昭，照川 陽太郎“できるPROシリーズVMware vSphere6”．
-
-\bibitem{metro}
-
 \end{thebibliography}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

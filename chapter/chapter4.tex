@@ -1,51 +1,123 @@
 \chapter{楽曲制作}
-\section{NoteSequenceの作成}
+\section{NoteSequenceについて}
 NoteSequenceとはMIDIデータから作成されるプロトコルバッファである.
-プロトコルバッファとはGoogleは2008年にオープンソース化したスキーマ言語であり,スキーマ言語とは.
-MagentaはPythonで作成されているので,実行するにはPythonファイルを指定し実行するか,
-NoteSequenceの作成は図のコマンドで作成できる.
-\begin{figure}[!ht]
-    \begin{screen}
-    \begin{center}
-        \includegraphics[scale=0.7, clip]{./img/Notesequence_make.png}
-        \caption{NoteSequenceの作成}
-        \label{fig:NoteSequenceの作成}
-    \end{center}
-    \end{screen}
-\end{figure} \\
---inputdirで学習させるMIDIデータの 絶対パスを指定し,--outputfileでNotesequenceの出力先のディレクトリを指定する.\\
-次に作成したNoteSequenceのデータセットを学習用と評価用に分割するために,下記のコマンドを実行する.
-\begin{figure}[!ht]
-    \begin{screen}
-    \begin{center}
-        \includegraphics[scale=0.7, clip]{./img/Notesequence_split.png}
-        \caption{NoteSequenceを学習用と評価表に分割}
-        \label{fig:NoteSequenceを学習用と評価表に分割}
-    \end{center}
-    \end{screen}
-\end{figure}\\
---configで使用するRNNを指定する.--evalratioでNotesequenceの10％が評価のためのデータになり,残りの90％が学習用のデータになる.\\
-\newpage
+プロトコルバッファとはGoogleが2008年にオープンソース化したバイナリベースのデータフォーマットである.
+既存の技術としてはXMLやJSONなどのテキストベースのデータフォーマットがあるが,プロトコルバッファはバイナリフォーマットであるので,アプリケーション間でデータ構造の送受信をする際に少ないデータ量ですむという特徴がある.
+スキーマ言語はなぜ重要なのか、そういう時代になったからだ.
+我々が単一RDBに接続する単一のWebアプリだけを書いていられる時代はとうの昔に終わった。データはあちこちのいろんなストレージ技術で保存されているかもしないし、バックエンドも単一サービスではなくて分割されているかもしれないし、クライアントはweb版, iOS版, Android版があってひょっとしたらそれぞれ別の言語で実装されており、外部開発者向けにAPIも公開しなければならない。
+だから、そこら中でデータをシリアライズするしデシリアライズするし、通信の両端で解釈に矛盾が無いようにすり合わせる必要がある。でも、すりあわせの目的でいちいち人間と自然言語で会話するのは苦痛なので、私たちは機械処理可能なコードで語りたい。だから、どういうデータがやってくるのかきちんと宣言的DSLで定義しておきたい。そこでスキーマ言語だ。
+JSON Schemaが広がりつつあるのもたぶんそういう理由だし、そもそもProtobuf自体もGoogleが社内で同じ問題にぶち当たって発明されたんだったような気がする。
+自分の管轄領域内に閉じたデータ構造であれば、スキーマとか型宣言とか細かい縛りなしで軽量に進めるのもありだ。しかし、他人の領域との界面はしっかり定義しておいた方が良い。スキーマ定義という税金を支払わないとその分のツケはどこかで回ってきて、1時間掛かるE2Eテストがこけるとか、週次変更レビュー合同会議の発足とか、そういうやつで支払うことになる。
+スキーマ定義さえあれば、webクライアント開発用の, バックエンド開発用の, アプリ開発用の言語に向けて対応するデータ構造定義を自動生成して、矛盾なくすべてをメンテナンスできる。
+通信の両端でスキーマさえ合致していれば、シリアライゼーション形式を合わせるのはむしろ間違えづらい。だから、JSONでもProtobufのデフォルトのそれでも、MessagePackでもXMLでも好きにすれば良い。ちなみに、Protobufで定義したデータ構造はProtobuf標準形式の他にJSONにもきちんとシリアライズできる。
+\section{Melody\_rnnを使用して学習モデルを作成}
+\subsection{NoteSequenceの作成}
+NoteSequenceの作成は以下に示すコマンドで作成できる.\\
+--input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し,--output\_fileでNotesequenceの出力先のディレクトリを指定する.\\
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+    convert\_dir\_to\_note\_sequences \
+    --input\_dir=\$INPUT\_DIRECTORY \
+    --output\_file=\$SEQUENCES\_TFRECORD \
+    --recursive
+\end{lstlisting}
+次に作成したNoteSequenceのデータセットを学習用と評価用に分割するために以下に示すのコマンドを実行する.\\
+--configで使用するRNNを指定する.--input\_dirでNoteSequenceの絶対パスを指定し,--output\_fileで分割したNotesequenceの出力先のディレクトリを指定する.
+--eval\_ratioでNotesequenceのデータを何パーセント学習用に用いるかを指定する.コマンドの場合は10\%が学習用のデータになる.
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+melody_rnn_create_dataset \
+--config=<one of 'basic_rnn', 'lookback_rnn', or 'attention_rnn'> \
+--input=/tmp/notesequences.tfrecord \
+--output_dir=/tmp/melody_rnn/sequence_examples \
+--eval_ratio=0.10
+\end{lstlisting}
 \subsection{学習の開始}
-\begin{figure}[!ht]
-    \begin{screen}
-    \begin{center}
-        \includegraphics[scale=0.5, clip]{./img/Rnn_train.png}
-        \caption{BasicRNNを使用した学習の開始}
-        \label{fig:BasicRNNを使用した学習の開始}
-    \end{center}
-    \end{screen}
-\end{figure}
---configで学習に使用する学習モデルを指定,--rundirで,--sequenceexamplefileで学習のために用意したNotesequenceを指定する.
---hparamsでメモリの使用量を指定し,--rnnlayersizeで中間層のノード数を指定し,--numtrainingstepsで学習回数を設定する.\\
-\begin{figure}[!ht]
-    \begin{screen}
-    \begin{center}
-        \includegraphics[scale=0.5, clip]{./img/MIDI_make.png}
-        \caption{学習モデルを使用し,10曲を作成}
-        \label{fig:学習モデルを使用し,10曲を作成}
-    \end{center}
-    \end{screen}
-\end{figure}
-
-\section{PolyfonyRNN}
+作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する.\\
+--configで学習に使用する学習モデルを指定,--rundirで学習のために用意したNotesequenceを指定し,--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する.
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--num\_trainingstepsで学習回数を設定する.\\
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+melody_rnn_train \
+--config=attention_rnn \
+--run_dir=/tmp/melody_rnn/logdir/run1 \
+--sequence_example_file=/tmp/melody_rnn/training_melodies.tfrecord \
+--hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
+--num_training_steps=20000
+\end{lstlisting}
+\subsection{音楽データの作成}
+以下に示すコマンドで学習モデルに入力する.\\
+--configで学習に使用する学習モデルを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
+--num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+    melody_rnn_generate \
+    --config=attention_rnn \
+    --run_dir=/tmp/melody_rnn/logdir/run1 \
+    --output_dir=/tmp/melody_rnn/generated \
+    --num_outputs=10 \
+    --num_steps=128 \
+    --hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
+    --primer_melody="[60]"
+\end{lstlisting}
+\subsection{事前に学習済のモデルを使用}
+また,Magendaのプロジェクトにすでに学習済のモデルが存在するのでそれを使用して音楽データを作成することもできる.
+生成にはmagバンドファイルが必要になるのでmagendaのGithubに公開されているので,それをダウンロードしてくる.
+その後以下に示すコマンドを実行する事で生成することができる.\\
+--configで学習に使用する学習モデルを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
+--num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+    melody_rnn_generate \
+    --config=${CONFIG} \
+    --bundle_file=${BUNDLE_PATH} \
+    --output_dir=/tmp/melody_rnn/generated \
+    --num_outputs=10 \
+    --num_steps=128 \
+    --primer_melody="[60]"
+\end{lstlisting}
+\newpage
+\section{Polyphony\_rnnを使用して学習モデルを作成}
+PolyphonyRNNを使用してする手順としては,大まかな流れは同じであるが--configで使用するRNNを指定する必要がないという違いがある
+\subsection{NoteSequenceの作成}
+NoteSequenceの作成は以下に示すコマンドで作成できる.\\
+--input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し,--output\_fileでNotesequenceの出力先のディレクトリを指定する.\\
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+    convert\_dir\_to\_note\_sequences \
+    --input\_dir=\$INPUT\_DIRECTORY \
+    --output\_file=\$SEQUENCES\_TFRECORD \
+    --recursive
+\end{lstlisting}
+次に作成したNoteSequenceのデータセットを学習用と評価用に分割するために以下に示すのコマンドを実行する.\\
+--input\_dirでNoteSequenceの絶対パスを指定し,--output\_fileで分割したNotesequenceの出力先のディレクトリを指定する.
+--eval\_ratioでNotesequenceのデータを何パーセント学習用に用いるかを指定する.コマンドの場合は10\%が学習用のデータになる.
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+    polyphony_rnn_create_dataset \
+    --input=/tmp/notesequences.tfrecord \
+    --output_dir=/tmp/polyphony_rnn/sequence_examples \
+    --eval_ratio=0.10
+    \end{lstlisting}
+\subsection{学習の開始}
+作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する.\\
+--configで学習に使用する学習モデルを指定,--rundirで学習のために用意したNotesequenceを指定し,--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する.
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--num\_trainingstepsで学習回数を設定する.\\
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+polyphony_rnn_train \
+--run_dir=/tmp/polyphony_rnn/logdir/run1 \
+--sequence_example_file=/tmp/polyphony_rnn/training_tracks.tfrecord \
+--hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
+--num_training_steps=20000
+\end{lstlisting}
+\subsection{音楽データの作成}
+以下に示すコマンドで学習モデルに入力する.\\
+--configで学習に使用する学習モデルを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
+--num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+    polyphony_rnn_generate \
+    --run_dir=/tmp/polyphony_rnn/logdir/run1 \
+    --hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
+    --output_dir=/tmp/polyphony_rnn/generated \
+    --num_outputs=10 \
+    --num_steps=128 \
+    --primer_pitches="[67,64,60]" \
+    --condition_on_primer=true \
+    --inject_primer_during_generation=false
+\end{lstlisting}
