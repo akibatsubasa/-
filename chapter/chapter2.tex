@@ -19,7 +19,7 @@ Magentaではまず学習させたい音楽のMIDIデータをNoteSequence（mag
 \label{fig:magentaによるMIDI音楽データ生成までのプロセス}
 \end{center}
 \end{screen}
-\end{figure}\\
+\end{figure}
 \subsection{MIDI}
 %MIDIとオーディオデータの形式について述べる
 パソコンで用いる音楽データには大きく分けて二つある.一つ目はオーディオデータといい波形の情報を記録する形式である.二つ目がMIDIである
@@ -37,7 +37,7 @@ CUDAのプログラムを実行するにあたって、GPUはグループ化さ�
 \item CUDA Toolkit
 \item PUボード用ドライバーソフトウェア
 \item 追加のライブラリ(cuDNNなど
-    \end{enumerate}
+\end{enumerate}
     Magendaプロジェクトが推奨している開発環境の構築には二つ方法があり,一つはDockerというコンテナ型の仮想化環境を構築できるオープンソースソフトウェアを用いる方法と,ローカル環境にPythonのパッケージ管理システムであるpipを用いて構築する方法の2つがある.\\
     Dockerを用いることで仮想化環境をクラウド上で共有できるサービスをであるDockerHubを使用できるため,パッケージのインストールをおこなわずにコマンド一つで環境を構築できる.
     しかし,コンテナにGPUを割り当てることは現状ではNVIDIAが公開しているOSSのnbidia-dockerという
