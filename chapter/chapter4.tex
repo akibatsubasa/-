@@ -77,12 +77,17 @@ melody_rnn_train \
 \section{Polyphony\_rnnを使用して学習モデルを作成}
 PolyphonyRNNを使用してする手順としては,大まかな流れは同じであるが--configで使用するRNNを指定する必要がないという違いがある
 \subsection{NoteSequenceの作成}
+NoteSequenceの作成は以下に示すコマンドで作成できる.\\
+--input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し,--output\_fileでNotesequenceの出力先のディレクトリを指定する.\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
     convert\_dir\_to\_note\_sequences \
     --input\_dir=\$INPUT\_DIRECTORY \
     --output\_file=\$SEQUENCES\_TFRECORD \
     --recursive
 \end{lstlisting}
+次に作成したNoteSequenceのデータセットを学習用と評価用に分割するために以下に示すのコマンドを実行する.\\
+--input\_dirでNoteSequenceの絶対パスを指定し,--output\_fileで分割したNotesequenceの出力先のディレクトリを指定する.
+--eval\_ratioでNotesequenceのデータを何パーセント学習用に用いるかを指定する.コマンドの場合は10\%が学習用のデータになる.
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
     polyphony_rnn_create_dataset \
     --input=/tmp/notesequences.tfrecord \
@@ -90,6 +95,9 @@ PolyphonyRNNを使用してする手順としては,大まかな流れは同じ�
     --eval_ratio=0.10
     \end{lstlisting}
 \subsection{学習の開始}
+作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する.\\
+--configで学習に使用する学習モデルを指定,--rundirで学習のために用意したNotesequenceを指定し,--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する.
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--num\_trainingstepsで学習回数を設定する.\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
 polyphony_rnn_train \
 --run_dir=/tmp/polyphony_rnn/logdir/run1 \
@@ -98,6 +106,10 @@ polyphony_rnn_train \
 --num_training_steps=20000
 \end{lstlisting}
 \subsection{音楽データの作成}
+以下に示すコマンドで学習モデルに入力する.\\
+--configで学習に使用する学習モデルを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
+--num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
     polyphony_rnn_generate \
     --run_dir=/tmp/polyphony_rnn/logdir/run1 \
