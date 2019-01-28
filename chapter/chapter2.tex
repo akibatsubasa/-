@@ -30,7 +30,6 @@
 本研究で使用するMagentaは音楽などをTensorFlowを使って機械学習するライブラリであり，Google BrainがGitHab上に公開されているOSSである.
 Magentaではまず学習させたい音楽のMIDIデータをNoteSequence（magentaが扱うファイル形式）とよばれるデータフォーマットに変更する.それを学習用データセットと評価用データセットに変換したあと学習を行う.
 このとき，一度に学習させるデータの数，学習を行う回数，ノード数を設定する.これをパッケージ化し，MIDIファイルとして新たに楽曲を生成するという流れである.これを図2.1に示す.
-\newpage
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
