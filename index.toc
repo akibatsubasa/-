@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 \contentsline {chapter}{\numberline {第1章}序論}{1}% 
 \contentsline {section}{\numberline {1.1}研究の背景と目的}{1}% 
 \contentsline {subsection}{\numberline {1.1.1}AIの始まり}{1}% 
@@ -40,4 +38,3 @@
 \contentsline {section}{\numberline {5.3}今後の課題}{23}% 
 \contentsline {chapter}{謝辞}{24}% 
 \contentsline {chapter}{参考文献}{25}% 
->>>>>>> master

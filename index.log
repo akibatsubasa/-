@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  28 JAN 2019 15:26
-=======
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  28 JAN 2019 15:28
->>>>>>> master
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  28 JAN 2019 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/matsumoto/Documents/soturon/-/index
-(/Users/matsumoto/Documents/soturon/-/index.tex
+**index.tex
+(./index.tex
 pLaTeX2e <2018-12-01> (based on LaTeX2e <2018-12-01>)
 (/usr/local/texlive/2018/texmf-dist/tex/platex/base/jreport.cls
 Document Class: jreport 2018/10/25 v1.8a Standard pLaTeX class
@@ -33,27 +29,35 @@ LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 \@lnumwidth=\dimen119
 \bibindent=\dimen120
 \heisei=\count93
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 99.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 ))
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/ascmac/ascmac.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ascmac/ascmac.sty
 Package: ascmac 2018/03/09 v2.0h ascmac wrapper (community edition) 
- (/usr/local/texlive/2018/texmf-dist/tex/latex/ascmac/tascmac.sty
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ascmac/tascmac.sty
 Package: tascmac 2018/03/09 v2.0h ascmac package (community edition) 
 \@savetbaselineshift=\dimen123
 \@saveybaselineshift=\dimen124
@@ -72,12 +76,15 @@ Package: tascmac 2018/03/09 v2.0h ascmac package (community edition)
 \@@bwsp=\box51
 \@bcal=\count94
 \shaderule=\dimen128
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/moreverb/moreverb.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/moreverb/moreverb.sty
 Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
- (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/verbatim.sty
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks17
 \verbatim@line=\toks18
@@ -86,17 +93,20 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \tab@position=\count95
 \tab@size=\count96
 \listing@line=\count97
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
 \multirow@colwidth=\skip43
 \multirow@cntb=\count98
 \multirow@dima=\skip44
 \bigstrutjot=\dimen129
-) (./style/eclbkbox.sty
+)
+(./style/eclbkbox.sty
 \bk@bxb=\box52
 \bk@bxa=\box53
 \bk@lcnt=\count99
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/fancybox/fancybox.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
@@ -112,499 +122,8 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks23
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxbase.sty
-Package: bxbase 2017/05/29 v1.1 BX base library
- (/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxbase.def
-File: bxbase.def 2017/05/29 v1.1 BX base library
- (/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxtoolbox.sty
-Package: bxtoolbox 2017/05/29 v1.1 BX developers' toolbox
- (/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxtoolbox.def
-File: bxtoolbox.def 2017/05/29 v1.1
- (/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count100
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxtoolbox-ext.def
-File: bxtoolbox-ext.def 2017/05/29 v1.1
-\bxResDim=\dimen131
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxtoolbox-ja.def
-File: bxtoolbox-ja.def 2017/05/29 v1.1
- (/usr/local/texlive/2018/texmf-dist/tex/platex/pxbase/pxbsjc.def)))
-\bxUcv=\count101
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks24
-\inpenc@posthook=\toks25
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count102
-\lst@gtempboxa=\box56
-\lst@token=\toks26
-\lst@length=\count103
-\lst@currlwidth=\dimen132
-\lst@column=\count104
-\lst@pos=\count105
-\lst@lostspace=\dimen133
-\lst@width=\dimen134
-\lst@newlines=\count106
-\lst@lineno=\count107
-\lst@maxwidth=\dimen135
- (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-\c@lstnumber=\count108
-\lst@skipnumbers=\count109
-\lst@framebox=\box57
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2018/09/02 1.7 listings configuration
-))
-Package: listings 2018/09/02 1.7 (Carsten Heinz)
-<<<<<<< HEAD
- (./macro.tex) (./index.aux)
-=======
-
-(./macro.tex) (./index.aux
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.79 ...による学習回数ごとの生成結果}{{5.1.2}{22}}
-                                                  
-? 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.79 ...による学習回数ごとの生成結果}{{5.1.2}{22}}
-                                                  
-? 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.81 ...による学習回数ごとの生成結果}{{5.1.2}{22}}
-                                                  
-? 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.81 ...による学習回数ごとの生成結果}{{5.1.2}{22}}
-                                                  
-? 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.83 ...による学習回数ごとの生成結果}{{5.1.2}{22}}
-                                                  
-? 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.83 ...による学習回数ごとの生成結果}{{5.1.2}{22}}
-                                                  
-? 
-
-LaTeX Warning: Label `webpage4' multiply defined.
-
 )
->>>>>>> master
-\openout1 = `index.aux'.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxbase.sty
+Package: bxbase 2017/05/29 v1.1 BX base library
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-\c@lstlisting=\count110
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 25.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 25.
- [1
-
-]
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 26.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 26.
- (./index.toc)
-\tf@toc=\write4
-\openout4 = `index.toc'.
-
- [1
-
-] (./index.lof)
-\tf@lof=\write5
-\openout5 = `index.lof'.
-
- [2
-
-] (./index.lot)
-\tf@lot=\write6
-\openout6 = `index.lot'.
-
- [3
-
-]
-(./chapter/chapter1.tex
-第 1 章
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-<<<<<<< HEAD
-(Font)              Font shape `JY1/gt/m/n' tried instead on inpu
-=======
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 3.
-File: ./img/Eugene_Goostman.jpg Graphic file (type bmp)
-<./img/Eugene_Goostman.jpg>
-[1
-
-
-]
-File: ./img/AI_History.jpg Graphic file (type bmp)
-<./img/AI_History.jpg>
-File: ./img/smartspeaker_list.jpg Graphic file (type bmp)
-<./img/smartspeaker_list.jpg>
- [2] [3] [4]) (./chapter/chapter2.tex [5]
-第 2 章
-
-! Package inputenc Error: Unicode character ^^H (U+0008)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...をする.また入出力の際もこの規格を用いる.^^H
-                                                  \\
-? 
-
-! Package inputenc Error: Unicode character ^^H (U+0008)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...お，インプットデータはone-hot Vectorで図^^H
-                                                  \ref{fig:インプットデータ...
-? 
-
-! Package inputenc Error: Unicode character ^^H (U+0008)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...図\\ref{fig:MIDIと音階}の数値を指定する^^H
-                                                 ．
-? 
-File: ./img/midi1.png Graphic file (type bmp)
-<./img/midi1.png>
-[6
-
-]
-File: ./img/midi2.png Graphic file (type bmp)
-<./img/midi2.png>
-
-Overfull \hbox (4.2464pt too wide) in paragraph at lines 22--23
- [] 
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 \subsection
-                {Magenta}
-? 
-[7]
-File: ./img/magenta_usestep.png Graphic file (type bmp)
-<./img/magenta_usestep.png>
- [8] [9]
-File: ./img/NVIDEA_Docker.png Graphic file (type bmp)
-<./img/NVIDEA_Docker.png>
- [10]) (./chapter/chapter3.tex [11]
-第 3 章
-File: ./img/basic3.png Graphic file (type bmp)
-<./img/basic3.png>
-[12
-
-]
-File: ./img/basic4.png Graphic file (type bmp)
-<./img/basic4.png>
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 　
-       Lookback\_rnnとAttention\_rnnはこれを基に機能を追加したものである．\\
-? 
-File: ./img/basic1.png Graphic file (type bmp)
-<./img/basic1.png>
-[13]
-File: ./img/lookback1.png Graphic file (type bmp)
-<./img/lookback1.png>
- [14]
-File: ./img/attention1.png Graphic file (type bmp)
-<./img/attention1.png>
- [15]
-
-! Package inputenc Error: Unicode character ^^H (U+0008)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 　学習回数を変更して楽曲制作を行^^H
-                                        う．本研究では500回^^H，5000回，2000...
-
-? 
-
-! Package inputenc Error: Unicode character ^^H (U+0008)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 ...して楽曲制作を行^^Hう．本研究では500回^^H
-                                                 ，5000回，20000回でそれぞれ楽
-? 
-
-! Package inputenc Error: Unicode character ^^H (U+0008)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.68 ...数を変更して楽曲制作を行う．本研究では^^H
-                                                 32,64,128でそれぞれ楽曲を制作
-? 
-) (./chapter/chapter4.tex [16]
-第 4 章
-[17
-
-] [18] [19] [20]) (./chapter/chapter5.tex [21]
-第 5 章
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.8 ...cs[scale=0.1, clip]{./img/^^HbasicMIDI.png}
-                                                  
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.8 ...cs[scale=0.1, clip]{./img/^^HbasicMIDI.png}
-                                                  
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.8 ...cs[scale=0.1, clip]{./img/^^HbasicMIDI.png}
-                                                  
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                     \endgroup 
-l.8 ...cs[scale=0.1, clip]{./img/^^HbasicMIDI.png}
-                                                  
-? 
-
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...cs[scale=0.1, clip]{./img/^^HbasicMIDI.png}
-                                                  
-? 
-! Missing { inserted.
-<to be read again> 
-                   \let 
-l.8 ...cs[scale=0.1, clip]{./img/^^HbasicMIDI.png}
-                                                  
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.9 ...ion{basic\_rnnによる学習回数ごとの生成結果}
-                                                  
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.9 ...ion{basic\_rnnによる学習回数ごとの生成結果}
-                                                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.9 ...ion{basic\_rnnによる学習回数ごとの生成結果}
-                                                  
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.17 ...ale=0.５, clip]{./img/^^HlookbackMIDI.png}
-                                                  
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.17 ...ale=0.５, clip]{./img/^^HlookbackMIDI.png}
-                                                  
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.17 ...ale=0.５, clip]{./img/^^HlookbackMIDI.png}
-                                                  
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                     \endgroup 
-l.17 ...ale=0.５, clip]{./img/^^HlookbackMIDI.png}
-                                                  
-? 
-
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 ...ale=0.５, clip]{./img/^^HlookbackMIDI.png}
-                                                  
-? 
-! Missing { inserted.
-<to be read again> 
-                   \let 
-l.17 ...ale=0.５, clip]{./img/^^HlookbackMIDI.png}
-                                                  
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.18 ...lookback\_rnnによる学習回数ごとの生成結果}
-                                                  
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.18 ...lookback\_rnnによる学習回数ごとの生成結果}
-                                                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 ...lookback\_rnnによる学習回数ごとの生成結果}
-                                                  
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.26 ...le=0.５, clip]{./img/^^HattentionMIDI.png}
-                                                  
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.26 ...le=0.５, clip]{./img/^^HattentionMIDI.png}
-                                                  
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.26 ...le=0.５, clip]{./img/^^HattentionMIDI.png}
-                                                  
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                     \endgroup 
-l.26 ...le=0.５, clip]{./img/^^HattentionMIDI.png}
-                                                  
-? 
-
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 ...le=0.５, clip]{./img/^^HattentionMIDI.png}
-                                                  
-? 
-! Missing { inserted.
-<to be read again> 
-                   \let 
-l.26 ...le=0.５, clip]{./img/^^HattentionMIDI.png}
-                                                  
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.27 ...ttention\_rnnによる学習回数ごとの生成結果}
-                                                  
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.27 ...ttention\_rnnによる学習回数ごとの生成結果}
-                                                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.27 ...ttention\_rnnによる学習回数ごとの生成結果}
-                                                  
-? 
-[22
-
-]) [23] [24
-
-] [25
-
-] (./index.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- )
-(\end occurred when \ifx on line 26 was incomplete)
-(\end occurred when \ifx on line 17 was incomplete)
-(\end occurred when \ifx on line 8 was incomplete) 
-Here is how much of TeX's memory you used:
- 3925 strings out of 493226
- 52232 string characters out of 6144096
- 133753 words of memory out of 5000000
- 7843 multiletter control sequences out of 15000+600000
- 17507 words of font info for 69 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 38i,10n,32p,1562b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on index.dvi (30 pages, 73964 bytes).
->>>>>>> master
+(/usr/local/texlive/2018/texmf-di
