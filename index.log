@@ -1,4 +1,5 @@
 This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  28 JAN 2019 15:39
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  28 JAN 2019 16:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -126,4 +127,372 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxbase.sty
 Package: bxbase 2017/05/29 v1.1 BX base library
 
+<<<<<<< HEAD
 (/usr/local/texlive/2018/texmf-di
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxbase.def
+File: bxbase.def 2017/05/29 v1.1 BX base library
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxtoolbox.sty
+Package: bxtoolbox 2017/05/29 v1.1 BX developers' toolbox
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxtoolbox.def
+File: bxtoolbox.def 2017/05/29 v1.1
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count100
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxtoolbox-ext.def
+File: bxtoolbox-ext.def 2017/05/29 v1.1
+\bxResDim=\dimen131
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxtoolbox-ja.def
+File: bxtoolbox-ja.def 2017/05/29 v1.1
+
+(/usr/local/texlive/2018/texmf-dist/tex/platex/pxbase/pxbsjc.def)))
+\bxUcv=\count101
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count102
+\lst@gtempboxa=\box56
+\lst@token=\toks26
+\lst@length=\count103
+\lst@currlwidth=\dimen132
+\lst@column=\count104
+\lst@pos=\count105
+\lst@lostspace=\dimen133
+\lst@width=\dimen134
+\lst@newlines=\count106
+\lst@lineno=\count107
+\lst@maxwidth=\dimen135
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+\c@lstnumber=\count108
+\lst@skipnumbers=\count109
+\lst@framebox=\box57
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2018/09/02 1.7 listings configuration
+))
+Package: listings 2018/09/02 1.7 (Carsten Heinz)
+
+(./macro.tex) (./index.aux
+
+LaTeX Warning: Label `webpage4' multiply defined.
+
+)
+\openout1 = `index.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+\c@lstlisting=\count110
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 25.
+ [1
+
+]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 26.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 26.
+ (./index.toc
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+ [1
+
+])
+\tf@toc=\write4
+\openout4 = `index.toc'.
+
+ [2] (./index.lof)
+\tf@lof=\write5
+\openout5 = `index.lof'.
+
+ [3
+
+] (./index.lot)
+\tf@lot=\write6
+\openout6 = `index.lot'.
+
+ [4
+
+]
+(./chapter/chapter1.tex
+第 1 章
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 3.
+File: ./img/Eugene_Goostman.jpg Graphic file (type bmp)
+<./img/Eugene_Goostman.jpg>
+[1
+
+
+]
+File: ./img/AI_History.jpg Graphic file (type bmp)
+<./img/AI_History.jpg>
+File: ./img/smartspeaker_list.jpg Graphic file (type bmp)
+<./img/smartspeaker_list.jpg>
+ [2] [3] [4]) (./chapter/chapter2.tex [5]
+第 2 章
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...をする.また入出力の際もこの規格を用いる.^^H
+                                                  \\
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...お，インプットデータはone-hot Vectorで図^^H
+                                                  \ref{fig:インプットデータ...
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...図\\ref{fig:MIDIと音階}の数値を指定する^^H
+                                                 ．
+? 
+File: ./img/midi1.png Graphic file (type bmp)
+<./img/midi1.png>
+[6
+
+]
+File: ./img/midi2.png Graphic file (type bmp)
+<./img/midi2.png>
+
+Overfull \hbox (4.2464pt too wide) in paragraph at lines 22--23
+ [] 
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \subsection
+                {Magenta}
+? 
+[7]
+File: ./img/magenta_usestep.png Graphic file (type bmp)
+<./img/magenta_usestep.png>
+ [8] [9]
+File: ./img/NVIDEA_Docker.png Graphic file (type bmp)
+<./img/NVIDEA_Docker.png>
+ [10]) (./chapter/chapter3.tex [11]
+第 3 章
+File: ./img/basic3.png Graphic file (type bmp)
+<./img/basic3.png>
+[12
+
+]
+File: ./img/basic4.png Graphic file (type bmp)
+<./img/basic4.png>
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 　
+       Lookback\_rnnとAttention\_rnnはこれを基に機能を追加したものである．\\
+? 
+File: ./img/basic1.png Graphic file (type bmp)
+<./img/basic1.png>
+[13]
+File: ./img/lookback1.png Graphic file (type bmp)
+<./img/lookback1.png>
+ [14]
+File: ./img/attention1.png Graphic file (type bmp)
+<./img/attention1.png>
+ [15]
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 　学習回数を変更して楽曲制作を行^^H
+                                        う．本研究では500回^^H，5000回，2000...
+
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 ...して楽曲制作を行^^Hう．本研究では500回^^H
+                                                 ，5000回，20000回でそれぞれ楽
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ...数を変更して楽曲制作を行う．本研究では^^H
+                                                 32,64,128でそれぞれ楽曲を制作
+? 
+) (./chapter/chapter4.tex [16]
+第 4 章
+[17
+
+] [18]
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 --configで学習に使用する^^H
+                                basic_rnnを指定,--rundirで学習のために用意し...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.35 --configで学習に使用する^^Hbasic_
+                                      rnnを指定,--rundirで学習のために用意し...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.37 ...style=\ttfamily\footnotesize,frame=single]
+                                                  
+? 
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.37 ...style=\ttfamily\footnotesize,frame=single]
+                                                  
+? 
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.37 ...style=\ttfamily\footnotesize,frame=single]
+                                                  
+? 
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.37 ...style=\ttfamily\footnotesize,frame=single]
+                                                  
+? 
+
+Overfull \hbox (37.01837pt too wide) in paragraph at lines 34--37
+[]\OT1/cmr/m/n/12 --config \JY1/mc/m/n/12 で学習に使用する \OT1/cmr/m/n/12 basi
+c$[]\OML/cmm/m/it/12 nn \JY1/mc/m/n/12 を指定\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/1
+2 ^^@ ^^@ \OML/cmm/m/it/12 rundir \JY1/mc/m/n/12 で学習のために用意した \OML/cm
+m/m/it/12 Notesequence \JY1/mc/m/n/12 を
+ []
+
+! Undefined control sequence.
+\lst@GetLineInterval ...r \lst@GLI \lst@linerange 
+                                                  \@nil 
+l.37 ...style=\ttfamily\footnotesize,frame=single]
+                                                  
+? 
+)
+Runaway argument?
+rnn_layer_sizes=[64,64]" \^^M--num_training_steps=20000 \end {lstlist\ETC.
+! File ended while scanning use of \lst@GLI.
+<inserted text> 
+                \par 
+l.42 \input{chapter/chapter4.tex}
+                                 
+? 
+(./chapter/chapter5.tex [19]
+第 5 章
+File: ./img/model.png Graphic file (type bmp)
+<./img/model.png>
+[20
+
+]
+File: ./img/basicMIDI.png Graphic file (type bmp)
+<./img/basicMIDI.png>
+File: ./img/lookbackMIDI.png Graphic file (type bmp)
+<./img/lookbackMIDI.png>
+File: ./img/attentionMIDI.png Graphic file (type bmp)
+<./img/attentionMIDI.png>
+ [21]) [22] [23
+
+] [24
+
+] (./index.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3935 strings out of 493226
+ 52487 string characters out of 6144096
+ 129698 words of memory out of 5000000
+ 7849 multiletter control sequences out of 15000+600000
+ 17507 words of font info for 69 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 38i,10n,32p,1562b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on index.dvi (29 pages, 58836 bytes).
+>>>>>>> master

@@ -1,11 +1,21 @@
 \chapter{結論}
 \section{AIによる楽曲制作の結果}
 \subsection{モデルによる生成結果の違い}
+\begin{figure}[h]
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=0.68, clip]{./img/model.png}
+        \caption{学習モデルごとの生成結果}
+        \label{fig:学習モデルごとの生成結果}
+    \end{center}
+    \end{screen}
+\end{figure}
+\newpage
 \subsection{学習回数による生成結果の違い}
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
-        \includegraphics[scale=0.5, clip]{./img/basicMIDI.png}
+        \includegraphics[scale=0.68, clip]{./img/basicMIDI.png}
         \caption{basic\_rnnによる学習回数ごとの生成結果}
         \label{fig:basic_rnnによる学習回数ごとの生成結果}
     \end{center}
@@ -14,7 +24,7 @@
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
-        \includegraphics[scale=0.5, clip]{./img/lookbackMIDI.png}
+        \includegraphics[scale=0.68, clip]{./img/lookbackMIDI.png}
         \caption{lookback\_rnnによる学習回数ごとの生成結果}
         \label{fig:lookback_rnnによる学習回数ごとの生成結果}
     \end{center}
@@ -23,7 +33,7 @@
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
-        \includegraphics[scale=0.5, clip]{./img/attentionMIDI.png}
+        \includegraphics[scale=0.68, clip]{./img/attentionMIDI.png}
         \caption{attention\_rnnによる学習回数ごとの生成結果}
         \label{fig:attention_rnnによる学習回数ごとの生成結果}
     \end{center}
