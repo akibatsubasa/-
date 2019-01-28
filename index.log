@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  28 JAN 2019 16:28
-=======
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  28 JAN 2019 15:39
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  28 JAN 2019 16:06
->>>>>>> 1612beb43b7a5d3cf7a4888e9b12bc0b933dce19
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  28 JAN 2019 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -131,9 +126,6 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxbase.sty
 Package: bxbase 2017/05/29 v1.1 BX base library
 
-<<<<<<< HEAD
-(/usr/local/texlive/2018/texmf-di
-=======
 (/usr/local/texlive/2018/texmf-dist/tex/latex/bxbase/bxbase.def
 File: bxbase.def 2017/05/29 v1.1 BX base library
 
@@ -266,11 +258,12 @@ File: ./img/Eugene_Goostman.jpg Graphic file (type bmp)
 
 
 ]
-File: ./img/AI_History.jpg Graphic file (type bmp)
-<./img/AI_History.jpg>
+File: ./img/Watson.jpg Graphic file (type bmp)
+<./img/Watson.jpg>
+ [2]
 File: ./img/smartspeaker_list.jpg Graphic file (type bmp)
 <./img/smartspeaker_list.jpg>
- [2] [3] [4]) (./chapter/chapter2.tex [5]
+ [3] [4]) (./chapter/chapter2.tex [5]
 第 2 章
 File: ./img/midi1.png Graphic file (type bmp)
 <./img/midi1.png>
@@ -370,17 +363,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3935 strings out of 493226
- 52487 string characters out of 6144096
+ 3938 strings out of 493226
+ 52526 string characters out of 6144096
  133698 words of memory out of 5000000
- 7849 multiletter control sequences out of 15000+600000
+ 7852 multiletter control sequences out of 15000+600000
  17507 words of font info for 69 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 38i,10n,32p,1562b,1696s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,32p,1562b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-<<<<<<< HEAD
-Output written on index.dvi (32 pages, 79744 bytes).
-=======
-Output written on index.dvi (29 pages, 58836 bytes).
->>>>>>> master
->>>>>>> 1612beb43b7a5d3cf7a4888e9b12bc0b933dce19
+Output written on index.dvi (32 pages, 79684 bytes).
