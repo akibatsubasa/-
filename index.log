@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  28 JAN 2019 14:16
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  28 JAN 2019 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -183,32 +183,23 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 26.
- (./index.toc
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
- [1
-
-])
+ (./index.toc)
 \tf@toc=\write4
 \openout4 = `index.toc'.
 
- [2] (./index.lof)
+ [1
+
+] (./index.lof)
 \tf@lof=\write5
 \openout5 = `index.lof'.
 
- [3
+ [2
 
 ] (./index.lot)
 \tf@lot=\write6
 \openout6 = `index.lot'.
 
- [4
+ [3
 
 ] (./chapter/chapter1.tex
 第 1 章
@@ -219,64 +210,4 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 3.
-File: ./img/Eugene_Goostman.jpg Graphic file (type bmp)
-<./img/Eugene_Goostman.jpg>
-[1
-
-
-] [2]
-File: ./img/AI_History.jpg Graphic file (type bmp)
-<./img/AI_History.jpg>
-File: ./img/smartspeaker_list.jpg Graphic file (type bmp)
-<./img/smartspeaker_list.jpg>
- [3] [4]) (./chapter/chapter2.tex [5]
-第 2 章
-[6
-
-]
-File: ./img/magenta_usestep.png Graphic file (type bmp)
-<./img/magenta_usestep.png>
- [7] [8]
-File: ./img/NVIDEA_Docker.png Graphic file (type bmp)
-<./img/NVIDEA_Docker.png>
- [9]) (./chapter/chapter3.tex [10]
-第 3 章
-File: ./img/basic3.png Graphic file (type bmp)
-<./img/basic3.png>
-[11
-
-]
-File: ./img/basic4.png Graphic file (type bmp)
-<./img/basic4.png>
-File: ./img/basic1.png Graphic file (type bmp)
-<./img/basic1.png>
- [12]
-File: ./img/lookback1.png Graphic file (type bmp)
-<./img/lookback1.png>
- [13]
-File: ./img/attention1.png Graphic file (type bmp)
-<./img/attention1.png>
-) (./chapter/chapter4.tex [14]
-第 4 章
-[15
-
-] [16] [17] [18]) (./chapter/chapter5.tex [19]
-第 5 章
-[20
-
-]) [21] [22
-
-] [23
-
-] (./index.aux) ) 
-Here is how much of TeX's memory you used:
- 3914 strings out of 493226
- 52034 string characters out of 6144094
- 133600 words of memory out of 5000000
- 7833 multiletter control sequences out of 15000+600000
- 17507 words of font info for 69 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 38i,10n,32p,1595b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on index.dvi (28 pages, 71620 bytes).
+(Font)              Font shape `JY1/gt/m/n' tried instead on inpu
