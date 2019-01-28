@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  25 JAN 2019 15:47
-=======
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.12.23)  25 JAN 2019 15:53
->>>>>>> 73661feb94347eb89ba18f35b87727a5d1a7b9ee
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  25 JAN 2019 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -184,30 +180,6 @@ File: listings.cfg 2018/09/02 1.7 listings configuration
 Package: listings 2018/09/02 1.7 (Carsten Heinz)
 
 (./macro.tex) (./index.aux
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.37 ...abel{fig:basic\_rnnのモデル(1)}{{3.1}{11}}
-                                                  
-? ^^[[A^^[[A
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.37 ...abel{fig:basic\_rnnのモデル(1)}{{3.1}{11}}
-                                                  
-? 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.39 ...bel{fig:basic\_rnnのモデル(２)}{{3.2}{12}}
-                                                  
-? 
 
 ! LaTeX Error: Missing \begin{document}.
 
@@ -215,19 +187,37 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 ...bel{fig:basic\_rnnのモデル(２)}{{3.2}{12}}
-                                                  
+l.1 <
+     <<<<<< HEAD
 ? 
-! Extra \endcsname.
-\@ifundefined #1->\ifcsname #1\endcsname 
-                                         \@ifundefin@d@i \else \@ifundefin@d...
-l.39 ...bel{fig:basic\_rnnのモデル(２)}{{3.2}{12}}
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.38 ...abel{fig:basic\_rnnのモデル(1)}{{3.1}{11}}
                                                   
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.39 ...bel{fig:basic\_rnnのモデル(２)}{{3.2}{12}}
+l.38 ...abel{fig:basic\_rnnのモデル(1)}{{3.1}{11}}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.40 ...bel{fig:basic\_rnnのモデル(２)}{{3.2}{12}}
+                                                  
+? 
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.40 ...bel{fig:basic\_rnnのモデル(２)}{{3.2}{12}}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.40 ...bel{fig:basic\_rnnのモデル(２)}{{3.2}{12}}
                                                   
 ? 
 
@@ -236,7 +226,7 @@ LaTeX Warning: Label `fig:basic\_rnnのモデル(２)' multiply defined.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.39 ...bel{fig:basic\_rnnのモデル(２)}{{3.2}{12}}
+l.40 ...bel{fig:basic\_rnnのモデル(２)}{{3.2}{12}}
                                                   
 ? 
 
@@ -284,35 +274,85 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 26.
  (./index.toc
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 ...sline {chapter}{\numberline {第1章}序論}{1}
+                                                  %
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 ...sline {chapter}{\numberline {第1章}序論}{1}
+                                                  %
+? 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-<<<<<<< HEAD
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
- [1
+(Font)              <6> on input line 3.
+[1
 
 ])
 \tf@toc=\write4
 \openout4 = `index.toc'.
 
- [2] (./index.lof)
+ [2] (./index.lof
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \addvspace {10\p@ }
+                       
+? 
+)
 \tf@lof=\write5
 \openout5 = `index.lof'.
 
  [3
 
-] (./index.lot)
+] (./index.lot
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \addvspace {10\p@ }
+                       
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \addvspace {10\p@ }
+                       
+? 
+)
 \tf@lot=\write6
 \openout6 = `index.lot'.
 
  [4
 
-]
-(./chapter/chapter1.tex
+] (./chapter/chapter1.tex
 第 1 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
@@ -337,18 +377,7 @@ File: ./img/smartspeaker_list.jpg Graphic file (type bmp)
 ]
 File: ./img/magenta_usestep.png Graphic file (type bmp)
 <./img/magenta_usestep.png>
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 \subsection
-                {MIDI}
-? 
-[7] [8]
+ [7] [8]
 File: ./img/NVIDEA_Docker.png Graphic file (type bmp)
 <./img/NVIDEA_Docker.png>
  [9]) (./chapter/chapter3.tex [10]
@@ -361,7 +390,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8 ...音の予測を可能にしている．このモデルを図^^H
+l.7 ...音の予測を可能にしている．このモデルを図^^H
                                                   3.1と3.2に示す．\\
 ? 
 File: ./img/basic3.png Graphic file (type bmp)
@@ -379,7 +408,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 　
+l.27 　
        Lookback\_rnnとAttention\_rnnはこれを基に機能を追加したものである．\\
 ? 
 File: ./img/basic1.png Graphic file (type bmp)
@@ -390,17 +419,17 @@ File: ./img/lookback1.png Graphic file (type bmp)
  [13]
 File: ./img/attention1.png Graphic file (type bmp)
 <./img/attention1.png>
-) (./chapter/chapter4.tex [14] [15]
+) (./chapter/chapter4.tex [14]
 第 4 章
-[16
+[15
 
-] [17] [18] [19]) (./chapter/chapter5.tex [20]
+] [16] [17] [18]) (./chapter/chapter5.tex [19]
 第 5 章
-[21
+[20
 
-]) [22] [23
+]) [21] [22
 
-] [24
+] [23
 
 ] (./index.aux
 ! Missing \endcsname inserted.
@@ -415,21 +444,42 @@ l.37 ...abel{fig:basic\_rnnのモデル(1)}{{3.1}{11}}
 l.39 ...bel{fig:basic\_rnnのモデル(２)}{{3.2}{12}}
                                                   
 ? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.43 ...abel{fig:lookback\_rnnのモデル}{{3.4}{13}}
+                                                  
+? 
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.43 ...abel{fig:lookback\_rnnのモデル}{{3.4}{13}}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.45 ...bel{fig:attention\_rnnのモデル}{{3.5}{14}}
+                                                  
+? 
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.45 ...bel{fig:attention\_rnnのモデル}{{3.5}{14}}
+                                                  
+? 
 )
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3900 strings out of 493226
- 51658 string characters out of 6144096
- 133614 words of memory out of 5000000
- 7821 multiletter control sequences out of 15000+600000
+ 3902 strings out of 493226
+ 51687 string characters out of 6144096
+ 133679 words of memory out of 5000000
+ 7823 multiletter control sequences out of 15000+600000
  17507 words of font info for 69 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  38i,10n,32p,1783b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index.dvi (30 pages, 69676 bytes).
-=======
-LaTeX Font Info:    External font `cmex10'
->>>>>>> 73661feb94347eb89ba18f35b87727a5d1a7b9ee
+Output written on index.dvi (29 pages, 69980 bytes).
