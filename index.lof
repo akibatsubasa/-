@@ -15,7 +15,7 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces attention\_rnnのモデル}}{15}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces 学習モデルごとの生成結果}}{20}% 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces basic\_rnnによる学習回数ごとの生成結果}}{21}% 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces lookback\_rnnによる学習回数ごとの生成結果}}{21}% 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces attention\_rnnによる学習回数ごとの生成結果}}{21}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces 学習モデルごとの生成結果}}{24}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces basic\_rnnによる学習回数ごとの生成結果}}{25}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces lookback\_rnnによる学習回数ごとの生成結果}}{25}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces attention\_rnnによる学習回数ごとの生成結果}}{25}% 

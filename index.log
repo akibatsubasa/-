@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  28 JAN 2019 16:06
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  28 JAN 2019 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -264,39 +264,6 @@ File: ./img/smartspeaker_list.jpg Graphic file (type bmp)
 <./img/smartspeaker_list.jpg>
  [2] [3] [4]) (./chapter/chapter2.tex [5]
 第 2 章
-
-! Package inputenc Error: Unicode character ^^H (U+0008)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...をする.また入出力の際もこの規格を用いる.^^H
-                                                  \\
-? 
-
-! Package inputenc Error: Unicode character ^^H (U+0008)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...お，インプットデータはone-hot Vectorで図^^H
-                                                  \ref{fig:インプットデータ...
-? 
-
-! Package inputenc Error: Unicode character ^^H (U+0008)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...図\\ref{fig:MIDIと音階}の数値を指定する^^H
-                                                 ．
-? 
 File: ./img/midi1.png Graphic file (type bmp)
 <./img/midi1.png>
 [6
@@ -309,16 +276,6 @@ Overfull \hbox (4.2464pt too wide) in paragraph at lines 22--23
  [] 
  []
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 \subsection
-                {Magenta}
-? 
 [7]
 File: ./img/magenta_usestep.png Graphic file (type bmp)
 <./img/magenta_usestep.png>
@@ -402,68 +359,47 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.35 --configで学習に使用する^^H
-                                basic_rnnを指定,--rundirで学習のために用意し...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.35 --configで学習に使用する^^Hbasic_
-                                      rnnを指定,--rundirで学習のために用意し...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.37 ...style=\ttfamily\footnotesize,frame=single]
-                                                  
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.37 ...style=\ttfamily\footnotesize,frame=single]
-                                                  
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.37 ...style=\ttfamily\footnotesize,frame=single]
-                                                  
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.37 ...style=\ttfamily\footnotesize,frame=single]
-                                                  
+                                basic\_rnnを指定,--rundirで学習のために用意...
 ? 
 
-Overfull \hbox (37.01837pt too wide) in paragraph at lines 34--37
-[]\OT1/cmr/m/n/12 --config \JY1/mc/m/n/12 で学習に使用する \OT1/cmr/m/n/12 basi
-c$[]\OML/cmm/m/it/12 nn \JY1/mc/m/n/12 を指定\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/1
-2 ^^@ ^^@ \OML/cmm/m/it/12 rundir \JY1/mc/m/n/12 で学習のために用意した \OML/cm
-m/m/it/12 Notesequence \JY1/mc/m/n/12 を
- []
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
 
-! Undefined control sequence.
-\lst@GetLineInterval ...r \lst@GLI \lst@linerange 
-                                                  \@nil 
-l.37 ...style=\ttfamily\footnotesize,frame=single]
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
                                                   
+l.45 ^^H
+        \subsection{lookback\_rnnを用いて学習を開始}
 ? 
-)
-Runaway argument?
-rnn_layer_sizes=[64,64]" \^^M--num_training_steps=20000 \end {lstlist\ETC.
-! File ended while scanning use of \lst@GLI.
-<inserted text> 
-                \par 
-l.42 \input{chapter/chapter4.tex}
-                                 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 --configで学習に使用する^^H
+                                lookback\_rnnを指定,--rundirで学習のために用...
+
 ? 
-(./chapter/chapter5.tex [19]
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 --configで学習に使用する^^H
+                                attention\_rnnを指定,--rundirで学習のために...
+? 
+[19] [20] [21] [22]) (./chapter/chapter5.tex [23]
 第 5 章
 File: ./img/model.png Graphic file (type bmp)
 <./img/model.png>
-[20
+[24
 
 ]
 File: ./img/basicMIDI.png Graphic file (type bmp)
@@ -472,9 +408,9 @@ File: ./img/lookbackMIDI.png Graphic file (type bmp)
 <./img/lookbackMIDI.png>
 File: ./img/attentionMIDI.png Graphic file (type bmp)
 <./img/attentionMIDI.png>
- [21]) [22] [23
+ [25]) [26] [27
 
-] [24
+] [28
 
 ] (./index.aux)
 
@@ -484,10 +420,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3935 strings out of 493226
  52487 string characters out of 6144096
- 129698 words of memory out of 5000000
+ 135698 words of memory out of 5000000
  7849 multiletter control sequences out of 15000+600000
  17507 words of font info for 69 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 38i,10n,32p,1562b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,32p,1562b,1712s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index.dvi (29 pages, 58836 bytes).
+Output written on index.dvi (33 pages, 77904 bytes).
