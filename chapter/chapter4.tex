@@ -29,7 +29,6 @@ melody_rnn_create_dataset \
 --output_dir=/tmp/melody_rnn/sequence_examples \
 --eval_ratio=0.10
 \end{lstlisting}
-\newpage
 \subsection{basic\_rnnを用いて学習を開始}
 作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する.\\
 --configで学習に使用するbasic\_rnnを指定,--rundirで学習のために用意したNotesequenceを指定し,--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する.
@@ -42,7 +41,7 @@ melody_rnn_train \
 --hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
 --num_training_steps=20000
 \end{lstlisting}
-\subsection{lookback\_rnnを用いて学習を開始}
+\subsection{lookback\_rnnを用いて学習を開始}
 作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する.\\
 --configで学習に使用するlookback\_rnnを指定,--rundirで学習のために用意したNotesequenceを指定し,--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する.
 --hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--num\_trainingstepsで学習回数を設定する.\\
