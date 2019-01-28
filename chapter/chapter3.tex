@@ -4,7 +4,7 @@
 \subsection{MelodyRNN}
 MelodeRNNは楽曲のメロディを制作するモデルである.MelodyRNNである３つのモデルを以下に示す．\\
 (1) basic\_rnn\\
-　前の状態を保持し，これを記憶または忘却する．時系列を学習することにより，次の音の予測を可能にしている．Lookback\_rnnとAttention\_rnnはこれを基に機能を追加したものである.
+　前の状態を保持し，これを記憶または忘却する．時系列を学習することにより，次の音の予測を可能にしている．
 \begin{figure}[!ht]
     \begin{screen}
     \begin{center}
@@ -13,7 +13,7 @@ MelodeRNNは楽曲のメロディを制作するモデルである.MelodyRNNで�
         \label{fig:basicrnnのモデル(1)}
     \end{center}
     \end{screen}
-\end{figure}\\
+\end{figure} \\
 \newpage
 \begin{figure}[!ht]
     \begin{screen}
@@ -23,8 +23,8 @@ MelodeRNNは楽曲のメロディを制作するモデルである.MelodyRNNで�
         \label{fig:basic_rnnのモデル(2)}
     \end{center}
     \end{screen}
-\end{figure}
-Lookback\_rnnとAttention\_rnnはこれを基に機能を追加したものである
+\end{figure} \\
+　Lookback\_rnnとAttention\_rnnはこれを基に機能を追加したものである．\\
 \begin{figure}[!ht]
     \begin{screen}
     \begin{center}
@@ -61,7 +61,8 @@ Lookback\_rnnとAttention\_rnnはこれを基に機能を追加したもので�
 \subsection{PolyphonyRNN}
 　複数の同時音のモデリングが可能になっており，複数音の響きを1つのかたまりとして捉えて学習しているモデルである.このモデルを使用することで，伴奏も含めた楽曲の生成が可能である\\
 上記のモデルを用いて制作を行い，それぞれの違いと有用性について検証する．
+\newpage
 \section{学習回数による違い}
-　学習回数を変更して楽曲制作を行い，それぞれの違いと有用性について検証する．
+　学習回数を変更して楽曲制作を行う．本研究では500回，5000回，20000回でそれぞれ楽曲を制作した．これらの違いを検証し，有用性について検討する．
 \section{ノード数による違い}
-　ノード数を変更して楽曲制作を行い，それぞれの違いと有用性について検証する．
+　ノード数を変更して楽曲制作を行う．本研究では32,64,128でそれぞれ楽曲を制作した．これらの違いを検証し，有用性について検討する．
