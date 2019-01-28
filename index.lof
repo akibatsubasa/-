@@ -1,6 +1,7 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces 第一次AIブームから今までの流れ\newline (引用：https://bit.ly/2Wc9Ykb)}}{3}% 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces 多種多様なスマートスピーカー}}{4}% 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces チューリングテストを合格したEugeneGoostman\newline (引用：http://www.itmedia.co.jp/news/articles/1807/26/news014.html)}}{1}% 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces 第一次AIブームから今までの流れ\newline (引用：https://tech-camp.in/note/technology/32652/)}}{4}% 
+\contentsline {figure}{\numberline {1.3}{\ignorespaces 多種多様なスマートスピーカー}}{4}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces magentaによるMIDI音楽データ生成までのプロセス}}{7}% 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Docker用NVIDAコンテナランタイム\newline (引用：https://github.com/NVIDIA/nvidia-docker)}}{9}% 
