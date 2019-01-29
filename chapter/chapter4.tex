@@ -133,7 +133,7 @@ polyphony_rnn_train \
 以下に示すコマンドで学習モデルに入力する.\\
 --configで学習に使用する学習モデルを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
 --num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
---hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.(図\ref{fig:MIDIと音階}参照)\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
     polyphony_rnn_generate \
     --run_dir=/tmp/polyphony_rnn/logdir/run1 \
