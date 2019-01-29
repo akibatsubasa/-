@@ -39,11 +39,49 @@
     \end{center}
     \end{screen}
 \end{figure}
-  
+\newpage
 \subsection{ノード数による生成結果の違い}
+\begin{figure}[h]
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=0.68, clip]{./img/nodo.png}
+        \caption{ノード数ごとの生成結果}
+        \label{fig:ノード数ごとの生成結果}
+    \end{center}
+    \end{screen}
+\end{figure}
+\newpage
 \section{調査結果}
+　楽曲制作に関して有用な条件をアンケート形式で調査した．調査方法はMelodyRNNによる三種の生成結果，学習回数ごとの生成結果，ノード数ごとの生成結果
+のそれぞれの項目から一番良いと思うものを選択してもらう形式を取った．以下に結果を示す．
+\begin{figure}[h]
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=0.5, clip]{./img/glaph1.png}
+        \caption{学習回数ごとの各モデルの調査結果}
+        \label{fig:学習回数ごと各モデルの調査結果}
+    \end{center}
+    \end{screen}
+\end{figure}
+\begin{figure}[h]
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=0.5, clip]{./img/glaph2.png}
+        \caption{各モデルごと学習回数の調査結果}
+        \label{fig:各モデルごとの学習回数の調査結果}
+    \end{center}
+    \end{screen}
+\end{figure}
+\begin{figure}[h]
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=0.5, clip]{./img/glaph3.png}
+        \caption{ノード数ごとの調査結果}
+        \label{fig:ノード数の調査結果}
+    \end{center}
+    \end{screen}
+\end{figure}
 
 \newpage
-
 \section{今後の課題}
-aaa\\
+今回，様々な条件で楽曲を制作した．特に学習回数を大きくすると楽曲の精度は高まった．しかし音階やスケールは理解できているようだが，メロディに関してはあまり良いものとは言えなかった．要因としては学習に用いる楽曲が少なかったことや学習回数がまだ足りなかったことがあげられる．\\

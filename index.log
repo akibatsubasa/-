@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  28 JAN 2019 16:44
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.1.8)  29 JAN 2019 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -179,11 +179,7 @@ File: listings.cfg 2018/09/02 1.7 listings configuration
 ))
 Package: listings 2018/09/02 1.7 (Carsten Heinz)
 
-(./macro.tex) (./index.aux
-
-LaTeX Warning: Label `webpage4' multiply defined.
-
-)
+(./macro.tex) (./index.aux)
 \openout1 = `index.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -235,14 +231,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [3
 
-] (./index.lot)
+]
+(./index.lot)
 \tf@lot=\write6
 \openout6 = `index.lot'.
 
  [4
 
-]
-(./chapter/chapter1.tex
+] (./chapter/chapter1.tex
 第 1 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
@@ -263,7 +259,49 @@ File: ./img/Watson.jpg Graphic file (type bmp)
  [2]
 File: ./img/smartspeaker_list.jpg Graphic file (type bmp)
 <./img/smartspeaker_list.jpg>
- [3] [4]) (./chapter/chapter2.tex [5]
+
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ...に対応できる汎用性を持ったAIが発表され,^^H
+                                                  以降，汎用人工知能（GAI）...
+? ^^[[A^^[[A
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ...分野に関してもAIが作成した肖像画が米競^^H
+                                                 売大手クリスティーズのオークシ
+
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ...で43万2500ドル（約4900万円）で落札され^^H
+                                                 たり，AIを用いて新しい楽曲を作
+
+? 
+[3] [4]) (./chapter/chapter2.tex [5]
 第 2 章
 File: ./img/midi1.png Graphic file (type bmp)
 <./img/midi1.png>
@@ -298,9 +336,44 @@ File: ./img/basic1.png Graphic file (type bmp)
 File: ./img/lookback1.png Graphic file (type bmp)
 <./img/lookback1.png>
  [14]
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...てこれによる繰り返しを捉えるものである.^^H
+                                                  図^^H\ref{fig:attentio_rnn...
+
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...による繰り返しを捉えるものである.^^H図^^H
+                                                 \ref{fig:attentio_rnnのモデル}
+
+? 
 File: ./img/attention1.png Graphic file (type bmp)
 <./img/attention1.png>
- [15]) (./chapter/chapter4.tex [16]
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ^^H
+        \\
+? 
+[15]) (./chapter/chapter4.tex [16]
 第 4 章
 [17
 
@@ -353,22 +426,139 @@ File: ./img/lookbackMIDI.png Graphic file (type bmp)
 <./img/lookbackMIDI.png>
 File: ./img/attentionMIDI.png Graphic file (type bmp)
 <./img/attentionMIDI.png>
- [24]) [25] [26
+ [24]
+File: ./img/nodo.png Graphic file (type bmp)
+<./img/nodo.png>
+ [25]
 
-] [27
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
 
-] (./index.aux)
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...有用な条件をアンケート形式で調査した．^^H
+                                                 ^^H調査方法はMelodyRNNによる三
 
-LaTeX Warning: There were multiply-defined labels.
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...用な条件をアンケート形式で調査した．^^H^^H
+                                                  調査方法はMelodyRNNによる...
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...した．^^H^^H調査方法はMelodyRNNによる三^^H
+                                                  種の生成結果，学習回数ごと...
+
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ^^H
+        ^^H\begin{figure}[h]
+? 
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ^^H^^H
+           \begin{figure}[h]
+? 
+File: ./img/glaph1.png Graphic file (type bmp)
+<./img/glaph1.png>
+File: ./img/glaph2.png Graphic file (type bmp)
+<./img/glaph2.png>
+File: ./img/glaph3.png Graphic file (type bmp)
+<./img/glaph3.png>
+
+Overfull \hbox (1.41655pt too wide) in paragraph at lines 55--84
+[]\JY1/mc/m/n/12 　楽曲制作に関して有用な条件をアンケ ート形式で調査した ． 調
+査方法は \OT1/cmr/m/n/12 MelodyRNN
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26]) [27]
+
+! Package inputenc Error: Unicode character ^^H (U+0008)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ...きました．そして，これまで支えてくれた^^H
+                                                 両親をはじめとする親族各位に改
+
+? 
+[28
+
+] [29
+
+] (./index.aux
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.95 ...学習回数ごと各モデルの調査結果}{{5.6}{26}}
+                                                  
+? 
+
+! Package inputenc Error: Unicode character \GenericError {(inputenc)          
+      }{Package inputenc Error: Unicode character ^^] (U+001D)
+(inputenc) not set up for use with LaTeX}{See the inputenc package documentatio
+n for explanation.}{You may provide a definition with
+(inputenc) \DeclareUnicodeCharacter } (U+001D)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 ...学習回数ごと各モデルの調査結果}{{5.6}{26}}
+                                                  
+? 
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.95 ...学習回数ごと各モデルの調査結果}{{5.6}{26}}
+                                                  
+? 
+)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 3938 strings out of 493226
- 52526 string characters out of 6144096
- 133698 words of memory out of 5000000
- 7852 multiletter control sequences out of 15000+600000
+ 3956 strings out of 493226
+ 52880 string characters out of 6144096
+ 133709 words of memory out of 5000000
+ 7866 multiletter control sequences out of 15000+600000
  17507 words of font info for 69 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  38i,10n,32p,1562b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index.dvi (32 pages, 79684 bytes).
+Output written on index.dvi (34 pages, 84976 bytes).
