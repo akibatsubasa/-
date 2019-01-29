@@ -60,27 +60,28 @@ Tensolflowのランタイムとして以下のシステムがサポートされ�
 以上の事を踏まえて今研究では学習回数を多くこなすため,GPUサポートのないmacOSは除く.
 また,Windows10の環境ではリリースされているCUDAのバージョンは10のみであり,Tensolflowのサポートを外れてしまう.
 そのため,CUDAv9がインストール可能なUbuntuを用いることとし,システムの開発環境を表\ref{tab:開発環境}に示す.
-    \begin{table}[h]
-    \begin{center}
-    \caption{開発環境}
-    \label{tab:開発環境}
-    \begin{tabular}{|c|p{20zw}|}
+\begin{table}[h]
+\begin{center}
+\caption{開発環境}
+\label{tab:開発環境}
+\begin{tabular}{|c|p{20zw}|}
+\hline
+    OS & Ubuntu 16.04 LTS\\
     \hline
-        OS & Ubuntu 16.04 LTS\\
-        \hline
-        CPU & Intel Core i3 8100\\
-        \hline
-        メモリ & 8GB\\
-        \hline
-        GPU & GeForce GTX 1060\\
-        \hline
-        CUDA & CUDA(9),cuDNN(7.4.2)\\
-        \hline
-        ライブラリ & TensorFlow(1.12.0),magenta(0.5.0)\\
-        \hline
-    \end{tabular}
-    \end{center}
-    \end{table}\\
+    CPU & Intel Core i3 8100\\
+    \hline
+    メモリ & 8GB\\
+    \hline
+    GPU & GeForce GTX 1060\\
+    \hline
+    CUDA & CUDA(9),cuDNN(7.4.2)\\
+    \hline
+    ライブラリ & TensorFlow(1.12.0),magenta(0.5.0)\\
+    \hline
+\end{tabular}
+\end{center}
+\end{table}\\
+\newpage
 \subsection{CUDA}
 CUDAは,NVIDIAが開発しているGPU上でプログラミングをするためのソフトウェアプラットフォームになる.
 含まれるものとしては,CUDAを実行形式に変えるコンパイラや,それをサポートするSDK,ライブラリ,あとはデバッグツール群である.
