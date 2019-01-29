@@ -48,7 +48,7 @@ MelodeRNNは楽曲のメロディを制作するモデルである.MelodyRNNで�
 \end{figure}\\
 \newpage
 (3) attention\_rnn\\
-　basic\_rnnを基に，過去の情報を予測結果に加えてこれによる繰り返しを捉えるものである.図\ref{fig:attentio_rnnのモデル}のような流れになっている．
+　basic\_rnnを基に，過去の情報を予測結果に加えてこれによる繰り返しを捉えるものである.図\ref{fig:attentio_rnnのモデル}のような流れになっている．
 \begin{figure}[!ht]
     \begin{screen}
     \begin{center}
@@ -60,7 +60,7 @@ MelodeRNNは楽曲のメロディを制作するモデルである.MelodyRNNで�
 \end{figure}\\
 \subsection{PolyphonyRNN}
 　複数の同時音のモデリングが可能になっており，複数音の響きを1つのかたまりとして捉えて学習しているモデルである.このモデルを使用することで，伴奏も含めた楽曲の生成が可能である．\\
-\\
+\\
 以上のモデルを用いて楽曲制作を行い，それぞれの違いと有用性について検証する．
 \newpage
 \section{学習回数による違い}
