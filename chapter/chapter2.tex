@@ -39,8 +39,8 @@ Magentaではまず学習させたい音楽のMIDIデータをNoteSequence（mag
     \end{center}
     \end{screen}
 \end{figure}
+\newpage
 \section{機械学習に適した開発環境について}
-MagendaでTensolflowのライブラリである.
 Tensolflowのランタイムとして以下のシステムがサポートされている.
 \begin{enumerate}
     \renewcommand{\labelenumi}{(\arabic{enumi})}
@@ -57,7 +57,7 @@ Tensolflowのランタイムとして以下のシステムがサポートされ�
     \item NVIDEAGPUドライバ(CUDA9.0には384.x以上が必要)
     \item cuDNN SDK
 \end{enumerate}
-以上の事を踏まえて今研究では学習回数が多いため,GPUサポートのないmacOSは除く.
+以上の事を踏まえて今研究では学習回数を多くこなすため,GPUサポートのないmacOSは除く.
 また,Windows10の環境ではリリースされているCUDAのバージョンは10のみであり,Tensolflowのサポートを外れてしまう.
 そのため,CUDAv9がインストール可能なUbuntuを用いることとし,システムの開発環境を表\ref{tab:開発環境}に示す.
     \begin{table}[h]
@@ -82,6 +82,6 @@ Tensolflowのランタイムとして以下のシステムがサポートされ�
     \end{center}
     \end{table}\\
 \subsection{CUDA}
-CUDAは、NVIDIAが開発しているGPU上でプログラミングをするためのソフトウェアプラットフォームになる.
-含まれるものとしては、CUDAを実行形式に変えるコンパイラや、それをサポートするSDK、ライブラリ、あとはデバッグツール群である.
-CUDAを導入することによって、プログラムを単に複数のプロセッサで動かすだけでなく、無駄なく並列化することができる。
+CUDAは,NVIDIAが開発しているGPU上でプログラミングをするためのソフトウェアプラットフォームになる.
+含まれるものとしては,CUDAを実行形式に変えるコンパイラや,それをサポートするSDK,ライブラリ,あとはデバッグツール群である.
+CUDAを導入することによって,プログラムを単に複数のプロセッサで動かすだけでなく,無駄なく並列化することができる.
