@@ -59,7 +59,7 @@ Tensolflowのランタイムとして以下のシステムがサポートされ�
     \item Windows7 以降
     \item Raspbian 9.0以降
 \end{enumerate}
-また,GPUを用いて学習を行う時にはtensolflow-gpuというパッケージが必要となり,導入には以下のドライバやライブラリが必要である.
+　また,GPUを用いて学習を行う時にはtensolflow-gpuというパッケージが必要となり,導入には以下のドライバやライブラリが必要である.
 \begin{enumerate}
     \renewcommand{\labelenumi}{(\arabic{enumi})}
     \item CUDA Toolkit (tensolflowはCUDA9.0をサポート)
@@ -67,7 +67,7 @@ Tensolflowのランタイムとして以下のシステムがサポートされ�
     \item NVIDEAGPUドライバ(CUDA9.0には384.x以上が必要)
     \item cuDNN SDK
 \end{enumerate}
-Windows10の環境ではリリースされているCUDAのバージョンは10のみであり,Tensolflowのサポートを外れてしまう.
+　Windows10の環境ではリリースされているCUDAのバージョンは10のみであり,Tensolflowのサポートを外れてしまう.
 そのため,CUDAv9がインストール可能なUbuntuを用いることとし,システムの開発環境を表\ref{tab:開発環境}に示す.
 \begin{table}[h]
 \begin{center}
