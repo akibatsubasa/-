@@ -27,8 +27,8 @@
 \end{figure}
 %AIを用いた楽曲サービスについて述べてその中でなぜMagendaを選ぶのかを述べる
 \subsection{Magenta}
-本研究で使用するMagentaは音楽などをTensorFlowを使って機械学習するライブラリであり，Google BrainがGitHub上に公開されているOSSである.(図\ref{fig:GitHub上に公開されているMagenta})
-Magentaではまず学習させたい音楽のMIDIデータをNoteSequence（magentaが扱うファイル形式）とよばれるデータフォーマットに変更する.それを学習用データセットと評価用データセットに変換したあと学習を行う.
+本研究で使用するMagentaは音楽などをTensorFlowを使って機械学習するライブラリであり，Google BrainがGitHub上に公開されているOSSである.これを図\ref{fig:GitHub上に公開されているMagenta}に示す．\\
+　Magentaではまず学習させたい音楽のMIDIデータをNoteSequence（magentaが扱うファイル形式）とよばれるデータフォーマットに変更する.それを学習用データセットと評価用データセットに変換したあと学習を行う.
 このとき，一度に学習させるデータの数，学習を行う回数，ノード数を設定する.これをパッケージ化し，MIDIファイルとして新たに楽曲を生成するという流れである.これを図\ref{fig:magentaによるMIDI音楽データ生成までのプロセス}に示す.
 \begin{figure}[h]
     \begin{screen}
@@ -67,8 +67,7 @@ Tensolflowのランタイムとして以下のシステムがサポートされ�
     \item NVIDEAGPUドライバ(CUDA9.0には384.x以上が必要)
     \item cuDNN SDK
 \end{enumerate}
-以上の事を踏まえて今研究では学習回数を多くこなすため,GPUサポートのないmacOSは除く.
-また,Windows10の環境ではリリースされているCUDAのバージョンは10のみであり,Tensolflowのサポートを外れてしまう.
+Windows10の環境ではリリースされているCUDAのバージョンは10のみであり,Tensolflowのサポートを外れてしまう.
 そのため,CUDAv9がインストール可能なUbuntuを用いることとし,システムの開発環境を表\ref{tab:開発環境}に示す.
 \begin{table}[h]
 \begin{center}
@@ -94,5 +93,5 @@ Tensolflowのランタイムとして以下のシステムがサポートされ�
 \newpage
 \subsection{CUDA}
 CUDAは,NVIDIAが開発しているGPU上でプログラミングをするためのソフトウェアプラットフォームになる.
-含まれるものとしては,CUDAを実行形式に変えるコンパイラや,それをサポートするSDK,ライブラリ,あとはデバッグツール群である.
-CUDAを導入することによって,プログラムを単に複数のプロセッサで動かすだけでなく,無駄なく並列化することができる.
+含まれるものとしては,CUDAを実行形式に変えるコンパイラや,それをサポートするSDK,ライブラリ,デバッグツール群である.
+CUDAを導入することによって,プログラムを複数のプロセッサで動かすだけでなく,無駄なく並列化することができる.

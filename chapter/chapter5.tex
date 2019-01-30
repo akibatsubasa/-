@@ -1,6 +1,8 @@
 \chapter{結論}
 \section{AIによる楽曲制作の結果}
 \subsection{モデルによる生成結果の違い}
+学習モデルごとの生成結果は単音の単純な羅列が続くbasic\_rnnに比べlookback\_rnnやattention\_rnnの方がリズム的な繰り返しが多いという特徴が見られた．
+また，lookback\_rnnに比べattention\_rnnの方がの方が単純な繰り返しではなく，展開的な繰り返しをした．図\ref{fig:学習モデルごとの生成結果}はその生成結果である．(GarageBand上のスクリーンショット)
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
@@ -12,6 +14,7 @@
 \end{figure}
 \newpage
 \subsection{学習回数による生成結果の違い}
+　学習回数ごとの生成結果では，学習回数が増えるごとに学習させた楽曲に近づいた．また学習回数が少ないとコードのスケール外の音も入ってしまっていたが，学習回数を上げるとその現象の発生があまり起きなかった．図\ref{fig:basic_rnnによる学習回数ごとの生成結果},図\ref{fig:lookback_rnnによる学習回数ごとの生成結果},図\ref{fig:attention_rnnによる学習回数ごとの生成結果}はその生成結果である．(GarageBand上のスクリーンショット)
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
@@ -41,6 +44,7 @@
 \end{figure}
 \newpage
 \subsection{ノード数による生成結果の違い}
+　ノード数による生成結果ではノード数32と64に比べ128の方が長い音が増えた．また音階にまとまりが出てあまり高音や低音に移動せず一定の音域の楽曲になった．図\ref{fig:ノード数ごとの生成結果}はその生成結果である．(GarageBand上のスクリーンショット)
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
@@ -52,12 +56,12 @@
 \end{figure}
 \newpage
 \section{調査結果}
-　楽曲制作に関して有用な条件をアンケート形式で調査した．調査方法はMelodyRNNによる三種の生成結果，学習回数ごとの生成結果，ノード数ごとの生成結果
-のそれぞれの項目から一番良いと思うものを選択してもらう形式を取った．以下に結果を示す．
+楽曲制作に関して有用な条件をアンケート形式で調査した．調査方法はMelodyRNNによる三種の生成結果，学習回数ごとの生成結果，ノード数ごとの生成結果
+のそれぞれの項目から一番良いと思うものを選択してもらう形式をとった．以下の図\ref{fig:学習回数ごと各モデルの調査結果},図\ref{fig:各モデルごとの学習回数の調査結果},図\ref{fig:ノード数の調査結果}に結果を示す．\\
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
-        \includegraphics[scale=0.5, clip]{./img/glaph1.png}
+        \includegraphics[scale=0.6, clip]{./img/glaph1.png}
         \caption{学習回数ごとの各モデルの調査結果}
         \label{fig:学習回数ごと各モデルの調査結果}
     \end{center}
@@ -66,8 +70,8 @@
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
-        \includegraphics[scale=0.5, clip]{./img/glaph2.png}
-        \caption{各モデルごと学習回数の調査結果}
+        \includegraphics[scale=0.6, clip]{./img/glaph2.png}
+        \caption{各モデルごとの学習回数の調査結果}
         \label{fig:各モデルごとの学習回数の調査結果}
     \end{center}
     \end{screen}
@@ -76,7 +80,7 @@
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
-        \includegraphics[scale=0.5, clip]{./img/glaph3.png}
+        \includegraphics[scale=0.6, clip]{./img/glaph3.png}
         \caption{ノード数ごとの調査結果}
         \label{fig:ノード数の調査結果}
     \end{center}
