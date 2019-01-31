@@ -69,6 +69,7 @@ melody_rnn_train \
 --hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
 --num_training_steps=20000
 \end{lstlisting}
+
 \subsection{attention\_rnnを用いて学習を開始}
 作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する.\\
 　--configで学習に使用するattention\_rnnを指定,--rundirで学習のために用意したNotesequenceを指定し,--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する.
@@ -82,7 +83,38 @@ melody_rnn_train \
 --num_training_steps=20000
 \end{lstlisting}
 \newpage
-\subsection{音楽データの作成}
+\subsection{basic\_rnnを用いて音楽データの作成}
+以下に示すコマンドで学習モデルに入力する.\\
+　--configで学習に使用するbasic\_rnnを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
+--num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+    melody_rnn_generate \
+    --config=basic_rnn \
+    --run_dir=/tmp/melody_rnn/logdir/run1 \
+    --output_dir=/tmp/melody_rnn/generated \
+    --num_outputs=10 \
+    --num_steps=128 \
+    --hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
+    --primer_melody="[60]"
+\end{lstlisting}
+\subsection{lookback\_rnnを用いて音楽データの作成}
+以下に示すコマンドで学習モデルに入力する.\\
+　--configで学習に使用するlookback\_rnnを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
+--num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+    melody_rnn_generate \
+    --config=lookback_rnn \
+    --run_dir=/tmp/melody_rnn/logdir/run1 \
+    --output_dir=/tmp/melody_rnn/generated \
+    --num_outputs=10 \
+    --num_steps=128 \
+    --hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
+    --primer_melody="[60]"
+\end{lstlisting}
+\newpage
+\subsection{attention\_rnnを用いて音楽データの作成}
 以下に示すコマンドで学習モデルに入力する.\\
 　--configで学習に使用するattention\_rnnを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
 --num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
