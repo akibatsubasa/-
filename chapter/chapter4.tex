@@ -12,7 +12,7 @@ NoteSequenceとはMIDIデータから作成されるプロトコルバッファ�
 \label{tab:JSONとプロトコルバッファの比較}
 \begin{tabular}{|l|c|c|}
 \hline
-    プロトコルバッファ & JSON\\ \hline
+    & プロトコルバッファ & JSON\\\hline
     \hline
     フォーマット & バイナリベース & テキストベース\\
     \hline
@@ -24,13 +24,13 @@ NoteSequenceとはMIDIデータから作成されるプロトコルバッファ�
     \hline
 \end{tabular}
 \end{center}
-\end{table}
-　NoteSequenceの作成は以下に示すコマンドで作成できる.\\
-　--input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し,--output\_fileでNotesequenceの出力先のディレクトリを指定する.\\
+\end{table}\\
+NoteSequenceの作成は以下に示すコマンドで作成できる.\\
+--input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し,--output\_fileでNotesequenceの出力先のディレクトリを指定する.
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
-    convert\_dir\_to\_note\_sequences \
-    --input\_dir=\$INPUT\_DIRECTORY \
-    --output\_file=\$SEQUENCES\_TFRECORD \
+    convert_dir_to_note_sequences \
+    --input_dir=$INPUT_DIRECTORY \
+    --output_file=$SEQUENCES_TFRECORD \
     --recursive
 \end{lstlisting}
 \newpage
