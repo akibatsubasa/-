@@ -4,27 +4,27 @@
 NoteSequenceとはMIDIデータから作成されるプロトコルバッファである.
 プロトコルバッファとはGoogleが2008年にオープンソース化したバイナリベースのデータフォーマットである.
 既存の技術としてはXMLやJSONなどのテキストベースのデータフォーマットがあるが,プロトコルバッファはバイナリフォーマットであるので,アプリケーション間でデータ構造の送受信をする際に少ないデータ量ですむという特徴がある.
+また,シリアライズ化された情報をデシリアライズする速度もJSONよりもプロトコルバッファの方が早い.
+しかし,データはバイナリ形式であるため,デシリアライズしなければ読むことができないため,JSONと比べて可読性は低い.
 \begin{table}[h]
 \begin{center}
 \caption{JSONとプロトコルバッファの比較}
 \label{tab:JSONとプロトコルバッファの比較}
 \begin{tabular}{|l|c|c|}
 \hline
-    & プロトコルバッファ & JSON\\ \hline
+    プロトコルバッファ & JSON\\ \hline
     \hline
     フォーマット & バイナリベース & テキストベース\\
     \hline
-    データ量 & 少ない & 多い \\
+    データ量 & 少ない & 多い\\
     \hline
-     &GPU & GeForce GTX 1060\\
+    可読性 & 低い & 高い\\
     \hline
-     &CUDA & CUDA(9),cuDNN(7.4.2)\\
-    \hline
-     &ライブラリ & TensorFlow(1.12.0),magenta(0.5.0)\\
+    デシリアライズ & 高速 & 低速\\
     \hline
 \end{tabular}
 \end{center}
-\end{table}\\
+\end{table}
 　NoteSequenceの作成は以下に示すコマンドで作成できる.\\
 　--input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し,--output\_fileでNotesequenceの出力先のディレクトリを指定する.\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
