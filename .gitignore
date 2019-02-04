@@ -1,8 +1,9 @@
-index.pdf
-index.lof
-index.log
-index.lot
-index.toc
+*.pdf
+*.log
+*.lot
+*.toc
 macro.tex
-texput.log
-index.synctex.gz
+*.aux
+*.dvi
+*.lof
+*.synctex.gz
