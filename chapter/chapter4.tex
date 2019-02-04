@@ -4,33 +4,33 @@
 NoteSequenceとはMIDIデータから作成されるプロトコルバッファである.
 プロトコルバッファとはGoogleが2008年にオープンソース化したバイナリベースのデータフォーマットである.
 既存の技術としてはXMLやJSONなどのテキストベースのデータフォーマットがあるが,プロトコルバッファはバイナリフォーマットであるので,アプリケーション間でデータ構造の送受信をする際に少ないデータ量ですむという特徴がある.
+また,シリアライズ化された情報をデシリアライズする速度もJSONよりもプロトコルバッファの方が早い.
+しかし,データはバイナリ形式であるため,デシリアライズしなければ読むことができないため,JSONと比べて可読性は低い.
 \begin{table}[h]
 \begin{center}
 \caption{JSONとプロトコルバッファの比較}
 \label{tab:JSONとプロトコルバッファの比較}
 \begin{tabular}{|l|c|c|}
 \hline
-    & プロトコルバッファ & JSON\\ \hline
+    & プロトコルバッファ & JSON\\\hline
     \hline
     フォーマット & バイナリベース & テキストベース\\
     \hline
-    データ量 & 少ない & 多い \\
+    データ量 & 少ない & 多い\\
     \hline
-     &GPU & GeForce GTX 1060\\
+    可読性 & 低い & 高い\\
     \hline
-     &CUDA & CUDA(9),cuDNN(7.4.2)\\
-    \hline
-     &ライブラリ & TensorFlow(1.12.0),magenta(0.5.0)\\
+    デシリアライズ & 高速 & 低速\\
     \hline
 \end{tabular}
 \end{center}
 \end{table}\\
-　NoteSequenceの作成は以下に示すコマンドで作成できる.\\
-　--input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し,--output\_fileでNotesequenceの出力先のディレクトリを指定する.\\
+NoteSequenceの作成は以下に示すコマンドで作成できる.\\
+--input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し,--output\_fileでNotesequenceの出力先のディレクトリを指定する.
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
-    convert\_dir\_to\_note\_sequences \
-    --input\_dir=\$INPUT\_DIRECTORY \
-    --output\_file=\$SEQUENCES\_TFRECORD \
+    convert_dir_to_note_sequences \
+    --input_dir=$INPUT_DIRECTORY \
+    --output_file=$SEQUENCES_TFRECORD \
     --recursive
 \end{lstlisting}
 \newpage
@@ -69,6 +69,7 @@ melody_rnn_train \
 --hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
 --num_training_steps=20000
 \end{lstlisting}
+
 \subsection{attention\_rnnを用いて学習を開始}
 作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する.\\
 　--configで学習に使用するattention\_rnnを指定,--rundirで学習のために用意したNotesequenceを指定し,--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する.
@@ -82,7 +83,38 @@ melody_rnn_train \
 --num_training_steps=20000
 \end{lstlisting}
 \newpage
-\subsection{音楽データの作成}
+\subsection{basic\_rnnを用いて音楽データの作成}
+以下に示すコマンドで学習モデルに入力する.\\
+　--configで学習に使用するbasic\_rnnを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
+--num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+    melody_rnn_generate \
+    --config=basic_rnn \
+    --run_dir=/tmp/melody_rnn/logdir/run1 \
+    --output_dir=/tmp/melody_rnn/generated \
+    --num_outputs=10 \
+    --num_steps=128 \
+    --hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
+    --primer_melody="[60]"
+\end{lstlisting}
+\subsection{lookback\_rnnを用いて音楽データの作成}
+以下に示すコマンドで学習モデルに入力する.\\
+　--configで学習に使用するlookback\_rnnを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
+--num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
+--hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+    melody_rnn_generate \
+    --config=lookback_rnn \
+    --run_dir=/tmp/melody_rnn/logdir/run1 \
+    --output_dir=/tmp/melody_rnn/generated \
+    --num_outputs=10 \
+    --num_steps=128 \
+    --hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
+    --primer_melody="[60]"
+\end{lstlisting}
+\newpage
+\subsection{attention\_rnnを用いて音楽データの作成}
 以下に示すコマンドで学習モデルに入力する.\\
 　--configで学習に使用するattention\_rnnを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
 --num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで

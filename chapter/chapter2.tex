@@ -86,7 +86,7 @@ AIの概念の始まりは,1950年にアラン・チューリングが提唱し�
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
-        \includegraphics[scale=0.8,clip]{./img/midi1.png}
+        \includegraphics[scale=0.85,clip]{./img/midi1.png}
         \caption{インプットデータの仕組み}
         \label{fig:インプットデータの仕組み}
     \end{center}
@@ -96,7 +96,7 @@ AIの概念の始まりは,1950年にアラン・チューリングが提唱し�
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
-        \includegraphics[scale=0.4,clip]{./img/midi2.png}
+        \includegraphics[scale=0.45,clip]{./img/midi2.png}
         \caption{MIDIと音階}
         \label{fig:MIDIと音階}
     \end{center}
@@ -177,3 +177,51 @@ Tensolflowのランタイムとして以下のシステムがサポートされ�
 CUDAは,NVIDIAが開発しているGPU上でプログラミングをするためのソフトウェアプラットフォームである.
 含まれるものとしては,CUDAを実行形式に変えるコンパイラや,それをサポートするSDK,ライブラリ,デバッグツール群である.
 CUDAを導入することによって,プログラムを複数のプロセッサで動かすだけでなく,無駄なく並列化することができる.
+導入に成功すれば,以下のように学習時にGPUの名前やメモリの状態が表示され,学習に使用される.
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+INFO:tensorflow:Graph was finalized.
+2019-01-31 16:19:01.831071: 
+I tensorflow/core/platform/cpu_feature_guard.cc:141]
+    Your CPU supports instructions that this TensorFlow
+    binary was not compiled to use: AVX2
+2019-01-31 16:19:02.120562: 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432]
+    Found device 0 with properties:
+name: GeForce GTX 1060 6GB major: 6 
+minor: 1 memoryClockRate(GHz): 1.759
+pciBusID: 0000:01:00.0
+totalMemory: 6.00GiB freeMemory: 4.96GiB
+2019-01-31 16:19:02.131909:
+    I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] 
+Adding visible gpu devices: 0
+2019-01-31 16:19:03.556213:
+    I tensorflow/core/common_runtime/gpu/gpu_device.cc:982]
+Device interconnect StreamExecutor with strength 1
+    edge matrix:
+2019-01-31 16:19:03.562443:
+    I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]
+        0
+2019-01-31 16:19:03.566344:
+    I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001]
+    0:   N
+2019-01-31 16:19:03.570191:
+    I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115]
+    Created TensorFlow device
+    (/job:localhost/replica:0/task:0/device:GPU:0 with 4714MB memory)
+-> physical GPU 
+(device: 0, name: GeForce GTX 1060 6GB,
+ pci bus id: 0000:01:00.0, compute capability: 6.1)
+INFO:tensorflow:Restoring parameters from
+    C:\Users\matsumoto\magenta
+    \melody_rnn\logdir\run1\train\model.ckpt-170
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+WARNING:tensorflow:From 
+C:\Users\matsumoto\AppData\Local\Programs\Python\Python36\lib
+\site-packages\tensorflow\python\training\monitored_session.py:804:
+    start_queue_runners 
+    (from tensorflow.python.training.queue_runner_impl)
+     is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+\end{lstlisting}
