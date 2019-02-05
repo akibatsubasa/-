@@ -92,17 +92,20 @@ AIの概念の始まりは，1950年にアラン・チューリングが提唱�
 　本研究で用いるAIはこのMIDIファイルの情報を元に学習をする．これはMIDIは実際の音ではなく音楽の演奏情報（音を出す，音の高さ，長さなど）のデータであり，各パートごとにトラックが分かれているため，すべての音が混合されているオーディオデータと違いMIDIの方が特徴をつかみやすいからである．
 また入出力の際もこの規格を用いる．\\
 　MIDIには以下の情報が含まれている．
-\begin{figure}[!ht]
+\begin{figure}[h]
     \begin{screen}
-・鍵盤のオンとオフ: 鍵盤がいつ押されたのか／離されたのか\\
-・演奏した音程 ベロシティー: どれだけの早さと強さで打鍵されたか\\
-・アフタータッチ: どのくらいの強さで鍵盤が押さえられているか\\
-・テンポ(もしくはBPM)\\
-・パン\\
-・モジュレーション\\
-・音量\\
+    \begin{itemize}
+    \item 鍵盤のオンとオフ: 鍵盤がいつ押されたのか／離されたのか
+    \item 演奏した音程 ベロシティー: どれだけの早さと強さで打鍵された
+    \item アフタータッチ: どのくらいの強さで鍵盤が押さえられているか
+    \item テンポ(もしくはBPM)
+    \item パン
+    \item モジュレーション
+    \item 音量
+    \end{itemize}
     \end{screen}
-\end{figure}\\
+\end{figure}
+\newpage
 　音の高さは最も低い音を0、最も高い音を127で半音刻みで割り当てられている．楽曲制作の際に音程を指定する場合は図\ref{fig:MIDIと音階}の数値を指定する．
 \begin{figure}[h]
     \begin{screen}
@@ -199,7 +202,7 @@ CUDAは，NVIDIAが開発しているGPU上でプログラミングをするた�
 含まれるものとしては，CUDAを実行形式に変えるコンパイラや，それをサポートするSDK，ライブラリ，デバッグツール群である．
 CUDAを導入することによって，プログラムを複数のプロセッサで動かすだけでなく，無駄なく並列化することができる．
 導入に成功すれば，以下のように学習時にGPUの名前やメモリの状態が表示され，学習に使用される．
-\begin{lstlisting}[basicstyle=\ttfamily\footnotesize，frame=single]
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
 INFO:tensorflow:Graph was finalized．
 2019-01-31 16:19:01．831071: 
 I tensorflow/core/platform/cpu_feature_guard．cc:141]
