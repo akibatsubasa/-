@@ -88,20 +88,22 @@ AIの概念の始まりは,1950年にアラン・チューリングが提唱し�
 %MIDIである必要性：なぜこれを使うのか波形でない理由
 \subsection{MIDI}
 音楽データには大きく分けて二つある．一つ目はオーディオデータといい波形の情報を記録する形式であり，二つ目がMIDIである．\\
-　MIDI（Musical Instrument Digital Interface）は，日本のMIDI規格協議会（JMSC，現在の社団法人音楽電子事業協会）と国際団体のMIDI Manufacturers Association (MMA) により策定された，電子楽器の演奏データを機器間でデジタル転送するための世界共通規格で，物理的な送受信回路・インタフェース，通信プロトコル，ファイルフォーマットなど複数の規定からなる．\\
+　MIDI（Musical Instrument Digital Interface）は，日本のMIDI規格協議会（JMSC，現在の社団法人音楽電子事業協会）と国際団体のMIDI Manufacturers Association (MMA) により策定された，電子楽器の演奏データを機器間でデジタル転送するための世界共通規格で，物理的な送受信回路・インタフェース，通信プロトコル，ファイルフォーマットなど複数の規定からなる．MIDIは単なるデータであり、マシン同士が通信につかう一連の指令である．\\
 　本研究で用いるAIはこのMIDIファイルの情報を元に学習をする．これはMIDIは実際の音ではなく音楽の演奏情報（音を出す，音の高さ，長さなど）のデータであり，各パートごとにトラックが分かれているため，すべての音が混合されているオーディオデータと違いMIDIの方が特徴をつかみやすいからである．
 また入出力の際もこの規格を用いる．\\
-　なお，インプットデータはone-hot Vectorで図\ref{fig:インプットデータの仕組み}のようになっている．また，楽曲制作の際に音程を指定する場合は図\ref{fig:MIDIと音階}の数値を指定する．
-\begin{figure}[h]
+　MIDIには以下の情報が含まれている．
+\begin{figure}[!ht]
     \begin{screen}
-    \begin{center}
-        \includegraphics[scale=0.85,clip]{./img/midi1.png}
-        \caption{インプットデータの仕組み}
-        \label{fig:インプットデータの仕組み}
-    \end{center}
+・鍵盤のオンとオフ: 鍵盤がいつ押されたのか／離されたのか\\
+・演奏した音程 ベロシティー: どれだけの早さと強さで打鍵されたか\\
+・アフタータッチ: どのくらいの強さで鍵盤が押さえられているか\\
+・テンポ(もしくはBPM)\\
+・パン\\
+・モジュレーション\\
+・音量\\
     \end{screen}
-\end{figure}
-\newpage
+\end{figure}\\
+　音の高さは最も低い音を0、最も高い音を127で半音刻みで割り当てられている．楽曲制作の際に音程を指定する場合は図\ref{fig:MIDIと音階}の数値を指定する．
 \begin{figure}[h]
     \begin{screen}
     \begin{center}
@@ -133,6 +135,16 @@ AIの概念の始まりは,1950年にアラン・チューリングが提唱し�
         \includegraphics[scale=1.7, clip]{./img/magenta_usestep.png}
         \caption{magentaによるMIDI音楽データ生成までのプロセス}
         \label{fig:magentaによるMIDI音楽データ生成までのプロセス}
+    \end{center}
+    \end{screen}
+\end{figure}
+　なお，インプットデータはone-hot Vectorで図\ref{fig:インプットデータの仕組み}のようになっている．
+\begin{figure}[h]
+    \begin{screen}
+    \begin{center}
+        \includegraphics[scale=0.85,clip]{./img/midi1.png}
+        \caption{インプットデータの仕組み}
+        \label{fig:インプットデータの仕組み}
     \end{center}
     \end{screen}
 \end{figure}
