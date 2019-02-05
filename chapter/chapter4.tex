@@ -1,11 +1,11 @@
 \chapter{楽曲制作}
 \section{Melody\_rnnを使用して学習モデルを作成}
 \subsection{NoteSequenceの作成}
-NoteSequenceとはMIDIデータから作成されるプロトコルバッファである.
-プロトコルバッファとはGoogleが2008年にオープンソース化したバイナリベースのデータフォーマットである.
-既存の技術としてはXMLやJSONなどのテキストベースのデータフォーマットがあるが,プロトコルバッファはバイナリフォーマットであるので,アプリケーション間でデータ構造の送受信をする際に少ないデータ量ですむという特徴がある.
-また,シリアライズ化された情報をデシリアライズする速度もJSONよりもプロトコルバッファの方が早い.
-しかし,データはバイナリ形式であるため,デシリアライズしなければ読むことができないため,JSONと比べて可読性は低い.
+NoteSequenceとはMIDIデータから作成されるプロトコルバッファである．
+プロトコルバッファとはGoogleが2008年にオープンソース化したバイナリベースのデータフォーマットである．
+既存の技術としてはXMLやJSONなどのテキストベースのデータフォーマットがあるが，プロトコルバッファはバイナリフォーマットであるので，アプリケーション間でデータ構造の送受信をする際に少ないデータ量ですむという特徴がある．
+また，シリアライズ化された情報をデシリアライズする速度もJSONよりもプロトコルバッファの方が早い．
+しかし，データはバイナリ形式であるため，デシリアライズしなければ読むことができないため，JSONと比べて可読性は低い．
 \begin{table}[h]
 \begin{center}
 \caption{JSONとプロトコルバッファの比較}
@@ -25,18 +25,18 @@ NoteSequenceとはMIDIデータから作成されるプロトコルバッファ�
 \end{tabular}
 \end{center}
 \end{table}\\
-NoteSequenceの作成は以下に示すコマンドで作成できる.\\
---input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し,--output\_fileでNotesequenceの出力先のディレクトリを指定する.
-\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
+NoteSequenceの作成は以下に示すコマンドで作成できる．\\
+--input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し，--output\_fileでNotesequenceの出力先のディレクトリを指定する．
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize，frame=single]
     convert_dir_to_note_sequences \
     --input_dir=$INPUT_DIRECTORY \
     --output_file=$SEQUENCES_TFRECORD \
     --recursive
 \end{lstlisting}
 \newpage
-次に作成したNoteSequenceのデータセットを学習用と評価用に分割するために以下に示すのコマンドを実行する.\\
-　--configで使用するRNNを指定する.--input\_dirでNoteSequenceの絶対パスを指定し,--output\_fileで分割したNotesequenceの出力先のディレクトリを指定する.
---eval\_ratioでNotesequenceのデータを何パーセント学習用に用いるかを指定する.コマンドの場合は10\%が学習用のデータになる.
+次に作成したNoteSequenceのデータセットを学習用と評価用に分割するために以下に示すのコマンドを実行する．\\
+　--configで使用するRNNを指定する．--input\_dirでNoteSequenceの絶対パスを指定し，--output\_fileで分割したNotesequenceの出力先のディレクトリを指定する．
+--eval\_ratioでNotesequenceのデータを何パーセント学習用に用いるかを指定する．コマンドの場合は10\%が学習用のデータになる．
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
 melody_rnn_create_dataset \
 --config=<one of 'basic_rnn', 'lookback_rnn', or 'attention_rnn'> \
@@ -45,9 +45,9 @@ melody_rnn_create_dataset \
 --eval_ratio=0.10
 \end{lstlisting}
 \subsection{basic\_rnnを用いて学習を開始}
-作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する.\\
---configで学習に使用するbasic\_rnnを指定,--rundirで学習のために用意したNotesequenceを指定し,--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する.
---hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--num\_trainingstepsで学習回数を設定する.\\
+作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する．\\
+--configで学習に使用するbasic\_rnnを指定，--rundirで学習のために用意したNotesequenceを指定し，--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する．
+--hparamsでメモリの使用量を指定し，--rnn\_layer\_sizeで中間層のノード数を指定し，--num\_trainingstepsで学習回数を設定する．\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
 melody_rnn_train \
 --config=basic_rnn \
@@ -58,9 +58,9 @@ melody_rnn_train \
 \end{lstlisting}
 \newpage
 \subsection{lookback\_rnnを用いて学習を開始}
-作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する.\\
-　--configで学習に使用するlookback\_rnnを指定,--rundirで学習のために用意したNotesequenceを指定し,--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する.
---hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--num\_trainingstepsで学習回数を設定する.\\
+作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する．\\
+　--configで学習に使用するlookback\_rnnを指定，--rundirで学習のために用意したNotesequenceを指定し，--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する．
+--hparamsでメモリの使用量を指定し，--rnn\_layer\_sizeで中間層のノード数を指定し，--num\_trainingstepsで学習回数を設定する．\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
 melody_rnn_train \
 --config=lookback_rnn \
@@ -71,9 +71,9 @@ melody_rnn_train \
 \end{lstlisting}
 
 \subsection{attention\_rnnを用いて学習を開始}
-作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する.\\
-　--configで学習に使用するattention\_rnnを指定,--rundirで学習のために用意したNotesequenceを指定し,--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する.
---hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--num\_trainingstepsで学習回数を設定する.\\
+作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する．\\
+　--configで学習に使用するattention\_rnnを指定，--rundirで学習のために用意したNotesequenceを指定し，--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する．
+--hparamsでメモリの使用量を指定し，--rnn\_layer\_sizeで中間層のノード数を指定し，--num\_trainingstepsで学習回数を設定する．\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
 melody_rnn_train \
 --config=attention_rnn \
@@ -84,10 +84,10 @@ melody_rnn_train \
 \end{lstlisting}
 \newpage
 \subsection{basic\_rnnを用いて音楽データの作成}
-以下に示すコマンドで学習モデルに入力する.\\
-　--configで学習に使用するbasic\_rnnを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
---num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
---hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+以下に示すコマンドで学習モデルに入力する．\\
+　--configで学習に使用するbasic\_rnnを指定，--rundirで学習済みのモデルを指定し，--output\_dirで音楽データの出力先のディレクトリを指定する．
+--num\_outputsで生成する音楽データの個数を指定し，--num\_stepsで
+--hparamsでメモリの使用量を指定し，--rnn\_layer\_sizeで中間層のノード数を指定し，--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する．\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
     melody_rnn_generate \
     --config=basic_rnn \
@@ -99,10 +99,10 @@ melody_rnn_train \
     --primer_melody="[60]"
 \end{lstlisting}
 \subsection{lookback\_rnnを用いて音楽データの作成}
-以下に示すコマンドで学習モデルに入力する.\\
-　--configで学習に使用するlookback\_rnnを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
---num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
---hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+以下に示すコマンドで学習モデルに入力する．\\
+　--configで学習に使用するlookback\_rnnを指定，--rundirで学習済みのモデルを指定し，--output\_dirで音楽データの出力先のディレクトリを指定する．
+--num\_outputsで生成する音楽データの個数を指定し，--num\_stepsで
+--hparamsでメモリの使用量を指定し，--rnn\_layer\_sizeで中間層のノード数を指定し，--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する．\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
     melody_rnn_generate \
     --config=lookback_rnn \
@@ -115,10 +115,10 @@ melody_rnn_train \
 \end{lstlisting}
 \newpage
 \subsection{attention\_rnnを用いて音楽データの作成}
-以下に示すコマンドで学習モデルに入力する.\\
-　--configで学習に使用するattention\_rnnを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
---num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
---hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+以下に示すコマンドで学習モデルに入力する．\\
+　--configで学習に使用するattention\_rnnを指定，--rundirで学習済みのモデルを指定し，--output\_dirで音楽データの出力先のディレクトリを指定する．
+--num\_outputsで生成する音楽データの個数を指定し，--num\_stepsで
+--hparamsでメモリの使用量を指定し，--rnn\_layer\_sizeで中間層のノード数を指定し，--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する．\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
     melody_rnn_generate \
     --config=attention_rnn \
@@ -130,12 +130,12 @@ melody_rnn_train \
     --primer_melody="[60]"
 \end{lstlisting}
 \subsection{事前に学習済のモデルを使用}
-また,Magendaのプロジェクトにすでに学習済のモデルが存在するのでそれを使用して音楽データを作成することもできる.
-生成にはmagバンドファイルが必要になるのでmagendaのGithubに公開されているので,それをダウンロードしてくる.
-その後以下に示すコマンドを実行する事で生成することができる.\\
-　--configで学習に使用する学習モデルを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
---num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
---hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.\\
+また，Magendaのプロジェクトにすでに学習済のモデルが存在するのでそれを使用して音楽データを作成することもできる．
+生成にはmagバンドファイルが必要になるのでmagendaのGithubに公開されているので，それをダウンロードしてくる．
+その後以下に示すコマンドを実行する事で生成することができる．\\
+　--configで学習に使用する学習モデルを指定，--rundirで学習済みのモデルを指定し，--output\_dirで音楽データの出力先のディレクトリを指定する．
+--num\_outputsで生成する音楽データの個数を指定し，--num\_stepsで
+--hparamsでメモリの使用量を指定し，--rnn\_layer\_sizeで中間層のノード数を指定し，--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する．\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
     melody_rnn_generate \
     --config=${CONFIG} \
@@ -147,19 +147,19 @@ melody_rnn_train \
 \end{lstlisting}
 \newpage
 \section{Polyphony\_rnnを使用して学習モデルを作成}
-PolyphonyRNNを使用してする手順としては,大まかな流れは同じであるが--configで使用するRNNを指定する必要がないという違いがある
+PolyphonyRNNを使用してする手順としては，大まかな流れは同じであるが--configで使用するRNNを指定する必要がないという違いがある
 \subsection{NoteSequenceの作成}
-NoteSequenceの作成は以下に示すコマンドで作成できる.\\
---input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し,--output\_fileでNotesequenceの出力先のディレクトリを指定する.\\
+NoteSequenceの作成は以下に示すコマンドで作成できる．\\
+--input\_dirで学習させるMIDIデータのディレクトリの絶対パスを指定し，--output\_fileでNotesequenceの出力先のディレクトリを指定する．\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
     convert\_dir\_to\_note\_sequences \
     --input\_dir=\$INPUT\_DIRECTORY \
     --output\_file=\$SEQUENCES\_TFRECORD \
     --recursive
 \end{lstlisting}
-　次に作成したNoteSequenceのデータセットを学習用と評価用に分割するために以下に示すのコマンドを実行する.\\
---input\_dirでNoteSequenceの絶対パスを指定し,--output\_fileで分割したNotesequenceの出力先のディレクトリを指定する.
---eval\_ratioでNotesequenceのデータを何パーセント学習用に用いるかを指定する.コマンドの場合は10\%が学習用のデータになる.
+　次に作成したNoteSequenceのデータセットを学習用と評価用に分割するために以下に示すのコマンドを実行する．\\
+--input\_dirでNoteSequenceの絶対パスを指定し，--output\_fileで分割したNotesequenceの出力先のディレクトリを指定する．
+--eval\_ratioでNotesequenceのデータを何パーセント学習用に用いるかを指定する．コマンドの場合は10\%が学習用のデータになる．
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
     polyphony_rnn_create_dataset \
     --input=/tmp/notesequences.tfrecord \
@@ -167,9 +167,9 @@ NoteSequenceの作成は以下に示すコマンドで作成できる.\\
     --eval_ratio=0.10
     \end{lstlisting}
 \subsection{学習の開始}
-作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する.\\
---configで学習に使用する学習モデルを指定,--rundirで学習のために用意したNotesequenceを指定し,--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する.
---hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--num\_trainingstepsで学習回数を設定する.\\
+作成したNoteSequenceから学習モデルを作成するために以下のコマンドを実行する．\\
+--configで学習に使用する学習モデルを指定，--rundirで学習のために用意したNotesequenceを指定し，--sequence\_examplefileで学習モデルの出力先のディレクトリを指定する．
+--hparamsでメモリの使用量を指定し，--rnn\_layer\_sizeで中間層のノード数を指定し，--num\_trainingstepsで学習回数を設定する．\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
 polyphony_rnn_train \
 --run_dir=/tmp/polyphony_rnn/logdir/run1 \
@@ -178,10 +178,10 @@ polyphony_rnn_train \
 --num_training_steps=20000
 \end{lstlisting}
 \subsection{音楽データの作成}
-以下に示すコマンドで学習モデルに入力する.\\
---configで学習に使用する学習モデルを指定,--rundirで学習済みのモデルを指定し,--output\_dirで音楽データの出力先のディレクトリを指定する.
---num\_outputsで生成する音楽データの個数を指定し,--num\_stepsで
---hparamsでメモリの使用量を指定し,--rnn\_layer\_sizeで中間層のノード数を指定し,--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する.(図\ref{fig:MIDIと音階}参照)\\
+以下に示すコマンドで学習モデルに入力する．\\
+--configで学習に使用する学習モデルを指定，--rundirで学習済みのモデルを指定し，--output\_dirで音楽データの出力先のディレクトリを指定する．
+--num\_outputsで生成する音楽データの個数を指定し，--num\_stepsで
+--hparamsでメモリの使用量を指定し，--rnn\_layer\_sizeで中間層のノード数を指定し，--primer\_melodyで学習モデルに入力する最初の音程をMIDIの形式で指定する．(図\ref{fig:MIDIと音階}参照)\\
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,frame=single]
     polyphony_rnn_generate \
     --run_dir=/tmp/polyphony_rnn/logdir/run1 \
